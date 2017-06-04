@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="1943" y="949"/>
         </scene>
-        <!--View Controller-->
+        <!--Step One View Controller-->
         <scene sceneID="fDn-pM-nrI">
             <objects>
-                <viewController storyboardIdentifier="sbStep1" id="ogd-Tf-28c" customClass="ViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbStep1" id="ogd-Tf-28c" customClass="StepOneViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eZQ-ET-ycT"/>
                         <viewControllerLayoutGuide type="bottom" id="qY2-QH-oKz"/>
