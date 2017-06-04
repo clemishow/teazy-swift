@@ -21,7 +21,15 @@ class StepFourViewController: UIViewController {
         self.UIButtonFinish.setTitle("Se connecter avec Facebook", for: .normal)
         self.UIButtonFinish.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), for: .normal)
         self.UIButtonFinish.layer.cornerRadius = 3;
+        self.UIButtonFinish.addTarget(self, action: #selector(pressed), for: .touchUpInside)
         
+    }
+    
+    func pressed(sender: UIButton) {
+        print("clic")
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyBoard.instantiateViewController(withIdentifier: "home")
+        self.present(homeViewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

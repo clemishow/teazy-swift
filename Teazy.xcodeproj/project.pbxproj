@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D749073F1EE465C700B2FAE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D749073E1EE465C700B2FAE0 /* HomeViewController.swift */; };
 		D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
 		D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53F1EDA03A400B9C598 /* ViewController.swift */; };
 		D768A5431EDA03A400B9C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768A5411EDA03A400B9C598 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D749073E1EE465C700B2FAE0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D768A53A1EDA03A400B9C598 /* Teazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768A53D1EDA03A400B9C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768A53F1EDA03A400B9C598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		D7AA14621EE454360052C6D3 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D749073E1EE465C700B2FAE0 /* HomeViewController.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				D79B97DE1EE4418C00F8D35C /* PageViewController.swift in Sources */,
 				D7AA145E1EE453FA0052C6D3 /* StepThreeViewController.swift in Sources */,
 				D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */,
+				D749073F1EE465C700B2FAE0 /* HomeViewController.swift in Sources */,
 				D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */,
 				D7AA145C1EE453A10052C6D3 /* StepTwoViewController.swift in Sources */,
 				D7AA14601EE454160052C6D3 /* StepFourViewController.swift in Sources */,

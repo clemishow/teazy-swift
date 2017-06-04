@@ -61,6 +61,24 @@
             </objects>
             <point key="canvasLocation" x="1175" y="949"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="ndl-Rm-Eb1">
+            <objects>
+                <viewController storyboardIdentifier="home" id="wpC-Co-Pwx" customClass="HomeViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rZf-La-sZH"/>
+                        <viewControllerLayoutGuide type="bottom" id="3nx-cj-9JL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vdS-Yn-RCF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9649545171824605" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qug-F1-eZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="1689"/>
+        </scene>
         <!--Step Four View Controller-->
         <scene sceneID="NJ7-VY-txa">
             <objects>
