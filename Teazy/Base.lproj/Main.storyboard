@@ -17,10 +17,10 @@
             </objects>
             <point key="canvasLocation" x="753" y="242"/>
         </scene>
-        <!--View Controller-->
+        <!--Step Three View Controller-->
         <scene sceneID="OUI-2x-5BJ">
             <objects>
-                <viewController storyboardIdentifier="sbStep3" id="x6l-9Q-WAJ" customClass="ViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbStep3" id="x6l-9Q-WAJ" customClass="StepThreeViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dpl-S7-uBu"/>
                         <viewControllerLayoutGuide type="bottom" id="aiI-Zd-EHY"/>
@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="1175" y="949"/>
         </scene>
-        <!--View Controller-->
+        <!--Step Four View Controller-->
         <scene sceneID="NJ7-VY-txa">
             <objects>
-                <viewController storyboardIdentifier="sbStep4" id="xb6-oP-jYY" customClass="ViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbStep4" id="xb6-oP-jYY" customClass="StepFourViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lea-wq-lJK"/>
                         <viewControllerLayoutGuide type="bottom" id="Smj-ED-cIl"/>
@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="-450" y="949"/>
         </scene>
-        <!--View Controller-->
+        <!--Step Two View Controller-->
         <scene sceneID="w73-Uu-Ca9">
             <objects>
-                <viewController storyboardIdentifier="sbStep2" id="HJv-Ky-cDL" customClass="ViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbStep2" id="HJv-Ky-cDL" customClass="StepTwoViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fCx-Hl-2gV"/>
                         <viewControllerLayoutGuide type="bottom" id="SGV-8f-m9H"/>

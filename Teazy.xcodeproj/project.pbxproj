@@ -14,6 +14,9 @@
 		D768A5481EDA03A400B9C598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768A5461EDA03A400B9C598 /* LaunchScreen.storyboard */; };
 		D79B97DE1EE4418C00F8D35C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B97DD1EE4418C00F8D35C /* PageViewController.swift */; };
 		D7AA14591EE44CD70052C6D3 /* StepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AA14581EE44CD70052C6D3 /* StepOneViewController.swift */; };
+		D7AA145C1EE453A10052C6D3 /* StepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AA145B1EE453A10052C6D3 /* StepTwoViewController.swift */; };
+		D7AA145E1EE453FA0052C6D3 /* StepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AA145D1EE453FA0052C6D3 /* StepThreeViewController.swift */; };
+		D7AA14601EE454160052C6D3 /* StepFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AA145F1EE454160052C6D3 /* StepFourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D768A5491EDA03A400B9C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D79B97DD1EE4418C00F8D35C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		D7AA14581EE44CD70052C6D3 /* StepOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepOneViewController.swift; path = ../StepOneViewController.swift; sourceTree = "<group>"; };
+		D7AA145B1EE453A10052C6D3 /* StepTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepTwoViewController.swift; path = ../StepTwoViewController.swift; sourceTree = "<group>"; };
+		D7AA145D1EE453FA0052C6D3 /* StepThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepThreeViewController.swift; sourceTree = "<group>"; };
+		D7AA145F1EE454160052C6D3 /* StepFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepFourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +79,28 @@
 		D7AA145A1EE453360052C6D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D7AA14581EE44CD70052C6D3 /* StepOneViewController.swift */,
+				D7AA14621EE454360052C6D3 /* App */,
+				D7AA14611EE454240052C6D3 /* Unboarding */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D7AA14611EE454240052C6D3 /* Unboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D7AA145B1EE453A10052C6D3 /* StepTwoViewController.swift */,
+				D7AA14581EE44CD70052C6D3 /* StepOneViewController.swift */,
+				D7AA145D1EE453FA0052C6D3 /* StepThreeViewController.swift */,
+				D7AA145F1EE454160052C6D3 /* StepFourViewController.swift */,
+			);
+			name = Unboarding;
+			sourceTree = "<group>";
+		};
+		D7AA14621EE454360052C6D3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79B97DE1EE4418C00F8D35C /* PageViewController.swift in Sources */,
+				D7AA145E1EE453FA0052C6D3 /* StepThreeViewController.swift in Sources */,
 				D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */,
 				D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */,
+				D7AA145C1EE453A10052C6D3 /* StepTwoViewController.swift in Sources */,
+				D7AA14601EE454160052C6D3 /* StepFourViewController.swift in Sources */,
 				D7AA14591EE44CD70052C6D3 /* StepOneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

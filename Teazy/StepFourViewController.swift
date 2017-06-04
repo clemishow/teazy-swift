@@ -1,5 +1,5 @@
 //
-//  StepOneViewController.swift
+//  StepFourViewController.swift
 //  Teazy
 //
 //  Created by Dev on 04/06/2017.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class StepOneViewController: UIViewController {
-    
+class StepFourViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 47/255, green: 63/255, blue: 83/255, alpha: 1)
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
