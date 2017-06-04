@@ -16,8 +16,15 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
         
+        self.rightButtonNav.action = #selector(openProfile);
+        self.rightButtonNav.target = self
+        
         // Style bar button item
         
+    }
+    
+    func openProfile(sender: UIButton) {
+        print("clic")
     }
 
     override func didReceiveMemoryWarning() {

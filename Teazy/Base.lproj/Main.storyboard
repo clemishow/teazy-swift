@@ -77,7 +77,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="BWb-M5-qiL">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="RGX-1e-bYb"/>
+                                        <barButtonItem key="rightBarButtonItem" image="icon-profile" id="RGX-1e-bYb"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -107,7 +107,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="ySM-5y-p0H">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Vx3-AZ-0IY"/>
+                                        <barButtonItem key="rightBarButtonItem" image="icon-profile" id="Vx3-AZ-0IY"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -245,6 +245,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon-profile" width="16" height="16"/>
         <image name="illu-beers" width="452" height="372"/>
         <image name="illu-champagne" width="350" height="436"/>
         <image name="illu-wine" width="380" height="342"/>
