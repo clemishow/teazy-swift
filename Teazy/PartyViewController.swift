@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  PartyViewController.swift
 //  Teazy
 //
 //  Created by Dev on 04/06/2017.
@@ -8,17 +8,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class PartyViewController: UIViewController {
 
-    @IBOutlet weak var navigationBar: UINavigationBar!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
-        
-        // Style navigation bar
-        print(self.navigationBar);
-        
         
     }
 

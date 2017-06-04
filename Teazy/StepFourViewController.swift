@@ -28,7 +28,7 @@ class StepFourViewController: UIViewController {
     func pressed(sender: UIButton) {
         print("clic")
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyBoard.instantiateViewController(withIdentifier: "home")
+        let homeViewController = storyBoard.instantiateViewController(withIdentifier: "tabBarController")
         self.present(homeViewController, animated: true, completion: nil)
     }
 

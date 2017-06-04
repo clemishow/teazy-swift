@@ -19,6 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Status bar color
         UIApplication.shared.statusBarStyle = .lightContent
         
+        // Style navigation bar
+        UINavigationBar.appearance().barTintColor = UIColor(red: 47/255, green: 63/255, blue: 83/255, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)]
+        
         return true
     }
 
