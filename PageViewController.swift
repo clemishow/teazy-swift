@@ -16,10 +16,10 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     // MARK: UIPageViewControllerDataSource
     
     lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newVc(viewController: "sbStep1"),
-                self.newVc(viewController: "sbStep2"),
-                self.newVc(viewController: "sbStep3"),
-                self.newVc(viewController: "sbStep4")]
+        return [self.newVc("sbStep1"),
+                self.newVc("sbStep2"),
+                self.newVc("sbStep3"),
+                self.newVc("sbStep4")]
     }()
     
     override func viewDidLoad() {
@@ -53,7 +53,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         self.view.addSubview(pageControl)
     }
     
-    func newVc(viewController: String) -> UIViewController {
+    func newVc(_ viewController: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     }
     
@@ -76,7 +76,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         // the last view controller.
         guard previousIndex >= 0 else {
             // Uncommment the line below, remove the line above if you don't want the page control to loop.
-             return nil
+            return nil
         }
         
         guard orderedViewControllers.count > previousIndex else {
