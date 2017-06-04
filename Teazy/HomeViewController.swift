@@ -9,16 +9,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var navigationBar: UINavigationBar!
+    
+    @IBOutlet weak var rightButtonNav: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
         
-        // Style navigation bar
-        print(self.navigationBar);
-        
+        // Style bar button item
         
     }
 
