@@ -10,6 +10,7 @@
 		D74907431EE468DE00B2FAE0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907421EE468DE00B2FAE0 /* TabBarController.swift */; };
 		D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907441EE46A7700B2FAE0 /* HomeViewController.swift */; };
 		D74907471EE46A9100B2FAE0 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907461EE46A9100B2FAE0 /* PartyViewController.swift */; };
+		D764697F1EE59A2200E1877E /* SNNeoNoire-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D764697E1EE59A2200E1877E /* SNNeoNoire-Regular.ttf */; };
 		D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
 		D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53F1EDA03A400B9C598 /* ViewController.swift */; };
 		D768A5431EDA03A400B9C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768A5411EDA03A400B9C598 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		D74907421EE468DE00B2FAE0 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D74907441EE46A7700B2FAE0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D74907461EE46A9100B2FAE0 /* PartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
+		D764697E1EE59A2200E1877E /* SNNeoNoire-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SNNeoNoire-Regular.ttf"; path = "../../../../Downloads/SNNeoNoire-Regular.ttf"; sourceTree = "<group>"; };
 		D768A53A1EDA03A400B9C598 /* Teazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768A53D1EDA03A400B9C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768A53F1EDA03A400B9C598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D764697D1EE59A0700E1877E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D764697E1EE59A2200E1877E /* SNNeoNoire-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		D768A5311EDA03A400B9C598 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		D768A53C1EDA03A400B9C598 /* Teazy */ = {
 			isa = PBXGroup;
 			children = (
+				D764697D1EE59A0700E1877E /* Fonts */,
 				D7AA145A1EE453360052C6D3 /* Controllers */,
 				D768A53D1EDA03A400B9C598 /* AppDelegate.swift */,
 				D768A53F1EDA03A400B9C598 /* ViewController.swift */,
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D768A5481EDA03A400B9C598 /* LaunchScreen.storyboard in Resources */,
+				D764697F1EE59A2200E1877E /* SNNeoNoire-Regular.ttf in Resources */,
 				D768A5451EDA03A400B9C598 /* Assets.xcassets in Resources */,
 				D768A5431EDA03A400B9C598 /* Main.storyboard in Resources */,
 			);

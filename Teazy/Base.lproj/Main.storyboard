@@ -92,7 +92,6 @@
         <!--Item-->
         <scene sceneID="kyx-PM-KrG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvi-13-KmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="cocktails" id="i9n-XD-ta6" customClass="CocktailsViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sVd-Fv-B9G"/>
@@ -116,6 +115,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="tRn-d0-7D3"/>
                     <navigationItem key="navigationItem" id="rxs-bd-I6e"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvi-13-KmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1165.5999999999999" y="3133.5832083958026"/>
         </scene>
@@ -142,7 +142,7 @@
         <scene sceneID="etC-N2-yyQ">
             <objects>
                 <navigationController id="Dpf-k7-apX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Q2-bY-OkH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6Q2-bY-OkH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -257,6 +257,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Fdg-Yf-BBv" secondAttribute="trailing" constant="30" id="q5z-eC-MIP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UIButtonFinish" destination="Fdg-Yf-BBv" id="bGc-4W-Np7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1K-CJ-aGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +268,7 @@
         <!--Step One View Controller-->
         <scene sceneID="w73-Uu-Ca9">
             <objects>
-                <viewController storyboardIdentifier="sbStep1" id="HJv-Ky-cDL" customClass="StepOneViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbStep1" id="HJv-Ky-cDL" customClass="StepOneViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fCx-Hl-2gV"/>
                         <viewControllerLayoutGuide type="bottom" id="SGV-8f-m9H"/>
@@ -304,7 +307,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Sf-SF-DLX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k4C-aK-eul">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="k4C-aK-eul">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
