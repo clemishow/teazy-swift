@@ -1,5 +1,5 @@
 //
-//  StepThreeViewController.swift
+//  StepFourViewController.swift
 //  Teazy
 //
 //  Created by Dev on 04/06/2017.
@@ -9,12 +9,19 @@
 import UIKit
 
 class StepThreeViewController: UIViewController {
+    
+//    @IBOutlet weak var UIButtonFinish: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 47/255, green: 63/255, blue: 83/255, alpha: 1)
-
-        // Do any additional setup after loading the view.
+        
+        // Style button finish
+//        self.UIButtonFinish.backgroundColor = UIColor(red: 60/255, green: 90/255, blue: 150/255, alpha: 1)
+//        self.UIButtonFinish.setTitle("Se connecter avec Facebook", for: .normal)
+//        self.UIButtonFinish.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), for: .normal)
+//        self.UIButtonFinish.layer.cornerRadius = 3;
+        
     }
 
     override func didReceiveMemoryWarning() {

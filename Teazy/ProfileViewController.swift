@@ -1,5 +1,5 @@
 //
-//  StepTwoViewController.swift
+//  ProfileViewController.swift
 //  Teazy
 //
 //  Created by Dev on 04/06/2017.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class StepTwoViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 47/255, green: 63/255, blue: 83/255, alpha: 1)
-        
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
+
     }
 
     override func didReceiveMemoryWarning() {

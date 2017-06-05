@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  CocktailsViewController.swift
 //  Teazy
 //
 //  Created by Dev on 04/06/2017.
@@ -8,17 +8,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
-    @IBOutlet weak var rightButtonNav: UIBarButtonItem!
-    
+class CocktailsViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
-        
-        
-        // Style bar button item
-        
+
     }
 
     override func didReceiveMemoryWarning() {

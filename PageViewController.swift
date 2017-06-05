@@ -18,8 +18,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc("sbStep1"),
                 self.newVc("sbStep2"),
-                self.newVc("sbStep3"),
-                self.newVc("sbStep4")]
+                self.newVc("sbStep3")]
     }()
     
     override func viewDidLoad() {
