@@ -56,46 +56,7 @@
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="18" name="ProximaNova-Regular"/>
                                             <real key="NSKern" value="0.20000000000000001"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="23" maximumLineHeight="23" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="23" maximumLineHeight="23" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -220,22 +181,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9B-V9-LqG">
-                                <rect key="frame" x="164" y="457" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9B-V9-LqG">
+                                <rect key="frame" x="149.5" y="468" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="8qZ-Ar-r1B"/>
+                                    <constraint firstAttribute="height" constant="75" id="x0t-o9-Cg6"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="pH6-bd-QVt" kind="presentation" id="kGv-sy-kPE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbQ-7J-Jr0">
+                                <rect key="frame" x="55" y="377" width="266.5" height="24"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Envie d'organiser une soirée ?">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwG-6T-KNy">
+                                <rect key="frame" x="0.0" y="242" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illu-beers" translatesAutoresizingMaskIntoConstraints="NO" id="RNN-S1-j1X">
+                                        <rect key="frame" x="20" y="12" width="65" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="5Aj-5l-f9e"/>
+                                            <constraint firstAttribute="width" constant="65" id="jzd-Fh-HDc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vous n’avez pas de notifications pour le moment, revenez vite !" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-o1-178">
+                                        <rect key="frame" x="105" y="23.5" width="250" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.24705882352941178" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UXg-o1-178" firstAttribute="leading" secondItem="RNN-S1-j1X" secondAttribute="trailing" constant="20" id="EoT-Eh-JUc"/>
+                                    <constraint firstItem="RNN-S1-j1X" firstAttribute="leading" secondItem="YwG-6T-KNy" secondAttribute="leading" constant="20" id="IWm-Sf-692"/>
+                                    <constraint firstAttribute="trailing" secondItem="UXg-o1-178" secondAttribute="trailing" constant="20" id="St5-H7-8mx"/>
+                                    <constraint firstItem="UXg-o1-178" firstAttribute="centerY" secondItem="YwG-6T-KNy" secondAttribute="centerY" id="jmV-YL-wrO"/>
+                                    <constraint firstAttribute="height" constant="80" id="xv0-kC-0fV"/>
+                                    <constraint firstItem="RNN-S1-j1X" firstAttribute="top" secondItem="YwG-6T-KNy" secondAttribute="top" constant="12" id="y9V-25-ul8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salut Clément" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fox-cW-5tc">
+                                <rect key="frame" x="133.5" y="94" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-F7-arr">
+                                <rect key="frame" x="126" y="140" width="123" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="2Lb-eZ-9jR"/>
+                                    <constraint firstAttribute="width" constant="123" id="PWZ-aD-GBH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YwG-6T-KNy" firstAttribute="leading" secondItem="lZs-4M-2xc" secondAttribute="leading" id="2t9-iN-Por"/>
+                            <constraint firstItem="e9B-V9-LqG" firstAttribute="top" secondItem="dbQ-7J-Jr0" secondAttribute="bottom" constant="67" id="6xf-yV-F4j"/>
+                            <constraint firstItem="aAu-F7-arr" firstAttribute="top" secondItem="fox-cW-5tc" secondAttribute="bottom" constant="25" id="E8U-ON-F2H"/>
+                            <constraint firstItem="dbQ-7J-Jr0" firstAttribute="top" secondItem="YwG-6T-KNy" secondAttribute="bottom" constant="55" id="F7J-9g-G8w"/>
+                            <constraint firstAttribute="trailing" secondItem="YwG-6T-KNy" secondAttribute="trailing" id="NTo-DU-43x"/>
+                            <constraint firstItem="aAu-F7-arr" firstAttribute="centerX" secondItem="lZs-4M-2xc" secondAttribute="centerX" id="Nvc-rF-GBO"/>
+                            <constraint firstItem="fox-cW-5tc" firstAttribute="top" secondItem="0c0-Ir-dk6" secondAttribute="bottom" constant="30" id="Xud-OZ-ZfN"/>
+                            <constraint firstItem="Wwe-xS-jOd" firstAttribute="top" secondItem="e9B-V9-LqG" secondAttribute="bottom" constant="75" id="Zlg-pa-b36"/>
+                            <constraint firstItem="e9B-V9-LqG" firstAttribute="centerX" secondItem="lZs-4M-2xc" secondAttribute="centerX" id="mNe-JK-5fq"/>
+                            <constraint firstItem="dbQ-7J-Jr0" firstAttribute="centerX" secondItem="lZs-4M-2xc" secondAttribute="centerX" id="pjh-o9-9sw"/>
+                            <constraint firstItem="fox-cW-5tc" firstAttribute="centerX" secondItem="lZs-4M-2xc" secondAttribute="centerX" id="uly-Lu-zXD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Teazy" id="C2z-cx-8TO"/>
+                    <connections>
+                        <outlet property="UIButtonCreateParty" destination="e9B-V9-LqG" id="It4-Hq-jC2"/>
+                        <outlet property="UIImageProfilePicture" destination="aAu-F7-arr" id="wXd-e0-X46"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5J-78-Sxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460" y="3902"/>
+            <point key="canvasLocation" x="-460" y="3901.7991004497753"/>
         </scene>
         <!--Create Party View Controller-->
         <scene sceneID="7qS-Kb-h9T">
@@ -518,6 +554,7 @@
         <image name="illu-beers" width="452" height="372"/>
         <image name="illu-champagne" width="350" height="436"/>
         <image name="illu-wine" width="380" height="342"/>
+        <image name="profile" width="960" height="640"/>
         <image name="tap1" width="16" height="16"/>
         <image name="tap2" width="16" height="16"/>
         <image name="tap3" width="16" height="16"/>

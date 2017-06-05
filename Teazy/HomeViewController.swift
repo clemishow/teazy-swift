@@ -10,14 +10,30 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var rightButtonNav: UIBarButtonItem!
+    @IBOutlet weak var UIButtonCreateParty: UIButton!
+    
+    @IBOutlet weak var UIImageProfilePicture: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
         
         
-        // Style bar button item
+        // Style button create party
+        self.UIButtonCreateParty.layoutIfNeeded()
+        self.UIButtonCreateParty.layer.cornerRadius = 100
+        self.UIButtonCreateParty.layer.masksToBounds = true
+        self.UIButtonCreateParty.backgroundColor = UIColor(red: 244/255, green: 179/255, blue: 80/255, alpha: 1)
+        self.UIButtonCreateParty.setTitleColor(UIColor.white, for: .normal)
+        self.UIButtonCreateParty.setTitle("+", for: .normal)
+        self.UIButtonCreateParty.titleLabel!.font = UIFont(name: "ProximaNova-Regular", size: 50)
+        
+        // Style profile picture
+//        self.UIImageProfilePicture.layer.cornerRadius = self.UIImageProfilePicture.frame.height / 2.0
+//        self.UIImageProfilePicture.layer.masksToBounds = true
+//        self.UIImageProfilePicture.clipsToBounds = true
+//        self.UIImageProfilePicture.layer.borderWidth = 2
+//        self.UIImageProfilePicture.layer.borderColor = UIColor.white.cgColor
         
     }
 
