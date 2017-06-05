@@ -175,10 +175,10 @@
             </objects>
             <point key="canvasLocation" x="-460" y="3902"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Party View Controller-->
         <scene sceneID="7qS-Kb-h9T">
             <objects>
-                <viewController id="pH6-bd-QVt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createParty" id="pH6-bd-QVt" customClass="CreatePartyViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qmb-CC-M3s"/>
                         <viewControllerLayoutGuide type="bottom" id="B4E-Mz-aD0"/>
@@ -192,14 +192,21 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="xlV-TW-gcA">
-                                        <barButtonItem key="leftBarButtonItem" title="Annuler" id="yYY-OJ-Uco"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Valider" id="BuI-vF-u0H"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Annuler" id="yYY-OJ-Uco">
+                                            <connections>
+                                                <action selector="goBack" destination="vaD-NM-wWe" id="FfW-5c-c0k"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sauvegarder" id="BuI-vF-u0H"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="UIBarButtonCancel" destination="yYY-OJ-Uco" id="F7K-m7-ir4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaD-NM-wWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -322,7 +329,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TAs-iu-BBL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Cocktails" image="tap3" id="tRn-d0-7D3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DnJ-Oc-orM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="DnJ-Oc-orM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -341,7 +348,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tXo-HZ-S8t" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profil" image="tap4" id="2cV-zD-vK5"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pnt-H5-G1q">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pnt-H5-G1q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -360,7 +367,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sKw-0l-R4z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Soirées" image="tap2" id="20o-qr-8QW"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gK0-nm-iGO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gK0-nm-iGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -385,7 +392,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fLb-5h-aij">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fLb-5h-aij">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
