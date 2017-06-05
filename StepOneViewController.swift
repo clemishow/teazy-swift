@@ -9,13 +9,10 @@
 import UIKit
 
 class StepOneViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.view)
         self.view.backgroundColor = UIColor(red: 47/255, green: 63/255, blue: 83/255, alpha: 1)
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

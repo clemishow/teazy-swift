@@ -15,6 +15,7 @@
 		D76469841EE59B7E00E1877E /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D76469811EE59B7E00E1877E /* ProximaNova-Regular.otf */; };
 		D76469851EE59B7E00E1877E /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D76469821EE59B7E00E1877E /* ProximaNova-Semibold.otf */; };
 		D76469871EE5B8D400E1877E /* CreatePartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76469861EE5B8D400E1877E /* CreatePartyViewController.swift */; };
+		D764698A1EE5BB5200E1877E /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76469891EE5BB5200E1877E /* PartyModel.swift */; };
 		D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
 		D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53F1EDA03A400B9C598 /* ViewController.swift */; };
 		D768A5431EDA03A400B9C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768A5411EDA03A400B9C598 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		D76469811EE59B7E00E1877E /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Regular.otf"; path = "../../../../Downloads/ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		D76469821EE59B7E00E1877E /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Semibold.otf"; path = "../../../../Downloads/ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
 		D76469861EE5B8D400E1877E /* CreatePartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePartyViewController.swift; sourceTree = "<group>"; };
+		D76469891EE5BB5200E1877E /* PartyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyModel.swift; sourceTree = "<group>"; };
 		D768A53A1EDA03A400B9C598 /* Teazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768A53D1EDA03A400B9C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768A53F1EDA03A400B9C598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		D76469881EE5BAD800E1877E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D76469891EE5BB5200E1877E /* PartyModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		D768A5311EDA03A400B9C598 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		D768A53C1EDA03A400B9C598 /* Teazy */ = {
 			isa = PBXGroup;
 			children = (
+				D76469881EE5BAD800E1877E /* Models */,
 				D764697D1EE59A0700E1877E /* Fonts */,
 				D7AA145A1EE453360052C6D3 /* Controllers */,
 				D768A53D1EDA03A400B9C598 /* AppDelegate.swift */,
@@ -221,6 +232,7 @@
 				D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */,
 				D74907431EE468DE00B2FAE0 /* TabBarController.swift in Sources */,
 				D7C6277F1EE48B7C00D967EC /* CocktailsViewController.swift in Sources */,
+				D764698A1EE5BB5200E1877E /* PartyModel.swift in Sources */,
 				D76469871EE5B8D400E1877E /* CreatePartyViewController.swift in Sources */,
 				D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */,
 				D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */,

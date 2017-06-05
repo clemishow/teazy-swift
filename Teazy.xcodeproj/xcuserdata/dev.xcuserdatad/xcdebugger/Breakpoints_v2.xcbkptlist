@@ -9,22 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StepOneViewController.swift"
-            timestampString = "518363256.179334"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Teazy/HomeViewController.swift"
             timestampString = "518293079.360597"
             startingColumnNumber = "9223372036854775807"
@@ -65,6 +49,115 @@
             endingLineNumber = "28"
             landmarkName = "cancel(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Teazy/PartyModel.swift"
+            timestampString = "518372880.914116"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "init(name:date:hour:informations:friends:drinks:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StepOneViewController.swift"
+            timestampString = "518376093.102509"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "StepOneViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Teazy.StepOneViewController.__deallocating_deinit"
+                  moduleName = "Teazy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dev/DEV/mobile/teazy-swift/StepOneViewController.swift"
+                  timestampString = "518376709.182772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Teazy.StepOneViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Teazy.StepOneViewController"
+                  moduleName = "Teazy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dev/DEV/mobile/teazy-swift/StepOneViewController.swift"
+                  timestampString = "518376709.185729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Teazy.StepOneViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Teazy.StepOneViewController"
+                  moduleName = "Teazy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dev/DEV/mobile/teazy-swift/StepOneViewController.swift"
+                  timestampString = "518376709.188563"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Teazy.StepOneViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Teazy.StepOneViewController&gt;"
+                  moduleName = "Teazy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dev/DEV/mobile/teazy-swift/StepOneViewController.swift"
+                  timestampString = "518376709.191277"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Teazy.StepOneViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Teazy.StepOneViewController&gt;"
+                  moduleName = "Teazy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dev/DEV/mobile/teazy-swift/StepOneViewController.swift"
+                  timestampString = "518376709.193889"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
