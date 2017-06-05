@@ -27,6 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSForegroundColorAttributeName: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         ]
         
+        // Style tab bat
+        UITabBar.appearance().unselectedItemTintColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        UITabBar.appearance().barTintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        UITabBar.appearance().tintColor = UIColor(red: 243/255, green: 178/255, blue: 89/255, alpha: 1)
+        UITabBar.appearance().isTranslucent = false
+        
         return true
     }
 

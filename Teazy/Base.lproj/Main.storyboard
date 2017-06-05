@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="775" y="931"/>
         </scene>
-        <!--Item-->
+        <!--Soirées-->
         <scene sceneID="TSG-zs-wSf">
             <objects>
                 <viewController storyboardIdentifier="party" id="ZvO-l3-45b" customClass="PartyViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,14 +82,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="20o-qr-8QW"/>
+                    <tabBarItem key="tabBarItem" title="Soirées" image="tap2" id="20o-qr-8QW"/>
                     <navigationItem key="navigationItem" id="SzN-Kb-B96"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ks9-sw-l8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="330" y="3136"/>
         </scene>
-        <!--Item-->
+        <!--Cocktails-->
         <scene sceneID="kyx-PM-KrG">
             <objects>
                 <viewController storyboardIdentifier="cocktails" id="i9n-XD-ta6" customClass="CocktailsViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,7 +112,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tRn-d0-7D3"/>
+                    <tabBarItem key="tabBarItem" title="Cocktails" image="tap3" id="tRn-d0-7D3"/>
                     <navigationItem key="navigationItem" id="rxs-bd-I6e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvi-13-KmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="710" y="1716"/>
         </scene>
-        <!--Item-->
+        <!--Profil-->
         <scene sceneID="E9u-fm-Rmk">
             <objects>
                 <viewController storyboardIdentifier="profile" id="IJU-Ww-Uyt" customClass="ProfileViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,13 +167,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2cV-zD-vK5"/>
+                    <tabBarItem key="tabBarItem" title="Profil" image="tap4" id="2cV-zD-vK5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBs-CU-GQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1943" y="3136"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="xaK-YX-7BE">
             <objects>
                 <viewController storyboardIdentifier="home" id="XWC-Vt-YIq" customClass="HomeViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
@@ -186,7 +186,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="F5i-kA-c2w"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tap1" id="F5i-kA-c2w">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.95294117647058818" green="0.69803921568627447" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5J-78-Sxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -326,5 +332,9 @@
         <image name="illu-beers" width="452" height="372"/>
         <image name="illu-champagne" width="350" height="436"/>
         <image name="illu-wine" width="380" height="342"/>
+        <image name="tap1" width="16" height="16"/>
+        <image name="tap2" width="16" height="16"/>
+        <image name="tap3" width="16" height="16"/>
+        <image name="tap4" width="16" height="16"/>
     </resources>
 </document>
