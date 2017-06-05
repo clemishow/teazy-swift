@@ -44,6 +44,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>SNNeoNoire-Regular.ttf</string>
+		<string>ProximaNova-Bold.otf</string>
+		<string>ProximaNova-Regular.otf</string>
+		<string>ProximaNova-Semibold.otf</string>
 	</array>
 </dict>
 </plist>

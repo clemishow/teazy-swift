@@ -232,6 +232,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JXl-f3-zmz"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="Dpf-k7-apX" kind="presentation" id="Whz-fv-eS9"/>

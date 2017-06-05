@@ -20,6 +20,7 @@ class StepThreeViewController: UIViewController {
         self.UIButtonFinish.setTitle("Se connecter avec Facebook", for: .normal)
         self.UIButtonFinish.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), for: .normal)
         self.UIButtonFinish.layer.cornerRadius = 3;
+        self.UIButtonFinish.titleLabel?.font = UIFont(name: "ProximaNova-Semibold", size: 18)
         
     }
 

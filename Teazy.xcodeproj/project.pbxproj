@@ -11,6 +11,9 @@
 		D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907441EE46A7700B2FAE0 /* HomeViewController.swift */; };
 		D74907471EE46A9100B2FAE0 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907461EE46A9100B2FAE0 /* PartyViewController.swift */; };
 		D764697F1EE59A2200E1877E /* SNNeoNoire-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D764697E1EE59A2200E1877E /* SNNeoNoire-Regular.ttf */; };
+		D76469831EE59B7E00E1877E /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D76469801EE59B7E00E1877E /* ProximaNova-Bold.otf */; };
+		D76469841EE59B7E00E1877E /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D76469811EE59B7E00E1877E /* ProximaNova-Regular.otf */; };
+		D76469851EE59B7E00E1877E /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D76469821EE59B7E00E1877E /* ProximaNova-Semibold.otf */; };
 		D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
 		D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53F1EDA03A400B9C598 /* ViewController.swift */; };
 		D768A5431EDA03A400B9C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768A5411EDA03A400B9C598 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 		D74907441EE46A7700B2FAE0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D74907461EE46A9100B2FAE0 /* PartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
 		D764697E1EE59A2200E1877E /* SNNeoNoire-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SNNeoNoire-Regular.ttf"; path = "../../../../Downloads/SNNeoNoire-Regular.ttf"; sourceTree = "<group>"; };
+		D76469801EE59B7E00E1877E /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Bold.otf"; path = "../../../../Downloads/ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		D76469811EE59B7E00E1877E /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Regular.otf"; path = "../../../../Downloads/ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		D76469821EE59B7E00E1877E /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Semibold.otf"; path = "../../../../Downloads/ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
 		D768A53A1EDA03A400B9C598 /* Teazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768A53D1EDA03A400B9C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768A53F1EDA03A400B9C598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,9 @@
 		D764697D1EE59A0700E1877E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D76469801EE59B7E00E1877E /* ProximaNova-Bold.otf */,
+				D76469811EE59B7E00E1877E /* ProximaNova-Regular.otf */,
+				D76469821EE59B7E00E1877E /* ProximaNova-Semibold.otf */,
 				D764697E1EE59A2200E1877E /* SNNeoNoire-Regular.ttf */,
 			);
 			name = Fonts;
@@ -191,6 +200,9 @@
 				D764697F1EE59A2200E1877E /* SNNeoNoire-Regular.ttf in Resources */,
 				D768A5451EDA03A400B9C598 /* Assets.xcassets in Resources */,
 				D768A5431EDA03A400B9C598 /* Main.storyboard in Resources */,
+				D76469831EE59B7E00E1877E /* ProximaNova-Bold.otf in Resources */,
+				D76469841EE59B7E00E1877E /* ProximaNova-Regular.otf in Resources */,
+				D76469851EE59B7E00E1877E /* ProximaNova-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
