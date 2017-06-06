@@ -33,6 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor(red: 243/255, green: 178/255, blue: 89/255, alpha: 1)
         UITabBar.appearance().isTranslucent = false
         
+        // Style search bar 
+        
+        
         return true
     }
 

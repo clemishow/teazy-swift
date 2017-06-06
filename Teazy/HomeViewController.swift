@@ -32,10 +32,9 @@ class HomeViewController: UIViewController {
         self.ContainerPicture.backgroundColor = .clear
         self.UIImageProfilePicture.layer.cornerRadius = self.UIImageProfilePicture.frame.height / 2
         self.UIImageProfilePicture.layer.masksToBounds = true
-        print(self.UIImageProfilePicture.frame)
-//        self.UIImageProfilePicture.clipsToBounds = true
-//        self.UIImageProfilePicture.layer.borderWidth = 2
-//        self.UIImageProfilePicture.layer.borderColor = UIColor.white.cgColor
+        self.UIImageProfilePicture.clipsToBounds = true
+        self.UIImageProfilePicture.layer.borderWidth = 1
+        self.UIImageProfilePicture.layer.borderColor = UIColor.white.cgColor
         
     }
 

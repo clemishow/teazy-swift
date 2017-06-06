@@ -10,12 +10,18 @@ import UIKit
 
 class PartyViewController: UIViewController {
 
-    @IBOutlet weak var rightButtonNav: UIBarButtonItem!
+    @IBOutlet weak var containerPicture: UIView!
+    @IBOutlet weak var profilePicture: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
         
+        // Style profile picture
+        self.containerPicture.backgroundColor = .clear
+        self.profilePicture.layer.cornerRadius = self.profilePicture.frame.height / 2
+        self.profilePicture.layer.masksToBounds = true
+        self.profilePicture.clipsToBounds = true
     }
 
 

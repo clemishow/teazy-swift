@@ -13,6 +13,9 @@
         <array key="ProximaNova-Bold.otf">
             <string>ProximaNova-Bold</string>
         </array>
+        <array key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Page View Controller-->
@@ -94,13 +97,71 @@
                     <view key="view" contentMode="scaleToFill" id="0cR-a0-URA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-Xv-y1a">
+                                <rect key="frame" x="0.0" y="64" width="375" height="110"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VQ-zu-7zG">
+                                        <rect key="frame" x="10" y="20" width="70" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="kMS-3B-KyE">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="kMS-3B-KyE" firstAttribute="height" secondItem="1VQ-zu-7zG" secondAttribute="height" id="5Kh-no-a1I"/>
+                                            <constraint firstAttribute="width" constant="70" id="A2a-o6-TQf"/>
+                                            <constraint firstAttribute="height" constant="70" id="alA-Se-eJd"/>
+                                            <constraint firstItem="kMS-3B-KyE" firstAttribute="width" secondItem="1VQ-zu-7zG" secondAttribute="width" id="dqq-u8-lik"/>
+                                            <constraint firstItem="kMS-3B-KyE" firstAttribute="centerY" secondItem="1VQ-zu-7zG" secondAttribute="centerY" id="pOK-cC-17R"/>
+                                            <constraint firstItem="kMS-3B-KyE" firstAttribute="centerX" secondItem="1VQ-zu-7zG" secondAttribute="centerX" id="rts-jX-ED8"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ra-Zb-SD8">
+                                        <rect key="frame" x="99" y="55" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DANS 8 JOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="659-am-uy6">
+                                        <rect key="frame" x="99" y="26" width="93" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.24705882352941178" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1VQ-zu-7zG" firstAttribute="leading" secondItem="PTz-Xv-y1a" secondAttribute="leading" constant="10" id="Any-jl-Bhg"/>
+                                    <constraint firstItem="1VQ-zu-7zG" firstAttribute="top" secondItem="PTz-Xv-y1a" secondAttribute="top" constant="20" id="aGy-Zs-UI1"/>
+                                    <constraint firstAttribute="height" constant="110" id="so7-9e-QWG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196078431372548" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PTz-Xv-y1a" firstAttribute="top" secondItem="iGm-8i-7wG" secondAttribute="bottom" id="1mp-jw-XkI"/>
+                            <constraint firstItem="PTz-Xv-y1a" firstAttribute="leading" secondItem="0cR-a0-URA" secondAttribute="leading" id="2XP-rW-hCA"/>
+                            <constraint firstAttribute="trailing" secondItem="PTz-Xv-y1a" secondAttribute="trailing" id="TkT-ak-9Kj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Teazy" id="SzN-Kb-B96"/>
+                    <connections>
+                        <outlet property="containerPicture" destination="1VQ-zu-7zG" id="UtI-kl-Gy7"/>
+                        <outlet property="profilePicture" destination="kMS-3B-KyE" id="fiR-iY-pj2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ks9-sw-l8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="3269"/>
+            <point key="canvasLocation" x="389.60000000000002" y="3268.5157421289359"/>
         </scene>
         <!--Teazy-->
         <scene sceneID="kyx-PM-KrG">
@@ -122,6 +183,11 @@
                                     <segue destination="YmO-xl-kDo" kind="show" id="fpZ-hg-Ez9"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="ksA-Rk-Ne5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -241,7 +307,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPt-33-pib">
-                                <rect key="frame" x="153" y="123" width="70" height="70"/>
+                                <rect key="frame" x="153" y="129" width="70" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-F7-arr">
                                         <rect key="frame" x="58" y="31" width="123" height="65"/>
@@ -271,7 +337,7 @@
                             <constraint firstAttribute="trailing" secondItem="YwG-6T-KNy" secondAttribute="trailing" id="NTo-DU-43x"/>
                             <constraint firstItem="fox-cW-5tc" firstAttribute="top" secondItem="0c0-Ir-dk6" secondAttribute="bottom" constant="30" id="Xud-OZ-ZfN"/>
                             <constraint firstItem="Wwe-xS-jOd" firstAttribute="top" secondItem="e9B-V9-LqG" secondAttribute="bottom" constant="75" id="Zlg-pa-b36"/>
-                            <constraint firstItem="ZPt-33-pib" firstAttribute="top" secondItem="fox-cW-5tc" secondAttribute="bottom" constant="8" id="cyb-DJ-3O1"/>
+                            <constraint firstItem="ZPt-33-pib" firstAttribute="top" secondItem="fox-cW-5tc" secondAttribute="bottom" constant="14" id="cyb-DJ-3O1"/>
                             <constraint firstItem="e9B-V9-LqG" firstAttribute="centerX" secondItem="lZs-4M-2xc" secondAttribute="centerX" id="mNe-JK-5fq"/>
                             <constraint firstItem="ZPt-33-pib" firstAttribute="centerX" secondItem="lZs-4M-2xc" secondAttribute="centerX" id="o5r-zR-bXX"/>
                             <constraint firstItem="dbQ-7J-Jr0" firstAttribute="centerX" secondItem="lZs-4M-2xc" secondAttribute="centerX" id="pjh-o9-9sw"/>
@@ -325,6 +391,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaD-NM-wWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-414" y="4006"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Amd-xg-0jc">
+            <objects>
+                <viewController id="TlD-ha-t5j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kFa-xM-k5G"/>
+                        <viewControllerLayoutGuide type="bottom" id="irb-0t-Rm6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="73G-BA-cba">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cga-IJ-ynR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="3999"/>
         </scene>
         <!--Teazy-->
         <scene sceneID="Mbe-wQ-egg">
