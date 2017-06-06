@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var UIButtonCreateParty: UIButton!
     
+    @IBOutlet weak var ContainerPicture: UIView!
     @IBOutlet weak var UIImageProfilePicture: UIImageView!
     
     override func viewDidLoad() {
@@ -20,8 +21,7 @@ class HomeViewController: UIViewController {
         
         
         // Style button create party
-        self.UIButtonCreateParty.layoutIfNeeded()
-        self.UIButtonCreateParty.layer.cornerRadius = 100
+        self.UIButtonCreateParty.layer.cornerRadius = self.UIButtonCreateParty.frame.height / 2
         self.UIButtonCreateParty.layer.masksToBounds = true
         self.UIButtonCreateParty.backgroundColor = UIColor(red: 244/255, green: 179/255, blue: 80/255, alpha: 1)
         self.UIButtonCreateParty.setTitleColor(UIColor.white, for: .normal)
@@ -29,8 +29,10 @@ class HomeViewController: UIViewController {
         self.UIButtonCreateParty.titleLabel!.font = UIFont(name: "ProximaNova-Regular", size: 50)
         
         // Style profile picture
-//        self.UIImageProfilePicture.layer.cornerRadius = self.UIImageProfilePicture.frame.height / 2.0
-//        self.UIImageProfilePicture.layer.masksToBounds = true
+        self.ContainerPicture.backgroundColor = .clear
+        self.UIImageProfilePicture.layer.cornerRadius = self.UIImageProfilePicture.frame.height / 2
+        self.UIImageProfilePicture.layer.masksToBounds = true
+        print(self.UIImageProfilePicture.frame)
 //        self.UIImageProfilePicture.clipsToBounds = true
 //        self.UIImageProfilePicture.layer.borderWidth = 2
 //        self.UIImageProfilePicture.layer.borderColor = UIColor.white.cgColor
