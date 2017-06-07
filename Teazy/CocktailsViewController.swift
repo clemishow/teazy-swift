@@ -12,7 +12,7 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var images = ["tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1"]
+    var images = ["tap1", "tap1", "tap1", "tap1", "tap1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,10 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! CocktailCollectionViewCell
         cell.image.image = UIImage(named: images[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("selected row is" , indexPath.row)
     }
 }
 

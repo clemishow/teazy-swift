@@ -13,6 +13,9 @@
         <array key="ProximaNova-Bold.otf">
             <string>ProximaNova-Bold</string>
         </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
         <array key="ProximaNova-Semibold.otf">
             <string>ProximaNova-Semibold</string>
         </array>
@@ -185,31 +188,51 @@
                                 </userDefinedRuntimeAttributes>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-F5-MyH" customClass="Cocktail">
-                                <rect key="frame" x="20" y="128" width="339" height="470"/>
+                                <rect key="frame" x="20" y="118" width="339" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3tG-pj-LsC">
-                                    <size key="itemSize" width="90" height="90"/>
+                                    <size key="itemSize" width="160" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collection_cell" id="oWv-pY-dOx" customClass="CocktailCollectionViewCell" customModule="Teazy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-gJ-SOz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-gJ-SOz">
+                                                    <rect key="frame" x="20" y="10" width="120" height="112"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="112" id="wQy-Hb-VGU"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld3-Hc-EJv">
+                                                    <rect key="frame" x="28" y="136" width="104" height="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.29994032118055558" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.18431372549019609" green="0.24705882352941178" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="ld3-Hc-EJv" secondAttribute="bottom" constant="2" id="2y0-xW-rEZ"/>
+                                            <constraint firstItem="ld3-Hc-EJv" firstAttribute="leading" secondItem="oWv-pY-dOx" secondAttribute="leadingMargin" constant="20" id="HIc-c7-Big"/>
+                                            <constraint firstItem="dGt-gJ-SOz" firstAttribute="centerX" secondItem="oWv-pY-dOx" secondAttribute="centerX" id="OoJ-Rq-wQm"/>
+                                            <constraint firstItem="dGt-gJ-SOz" firstAttribute="leading" secondItem="oWv-pY-dOx" secondAttribute="leading" constant="20" id="YpB-1P-Mct"/>
+                                            <constraint firstItem="ld3-Hc-EJv" firstAttribute="centerX" secondItem="oWv-pY-dOx" secondAttribute="centerX" id="cci-Y4-NW5"/>
+                                            <constraint firstAttribute="trailing" secondItem="dGt-gJ-SOz" secondAttribute="trailing" constant="20" id="hTy-Nb-D7T"/>
+                                            <constraint firstItem="dGt-gJ-SOz" firstAttribute="top" secondItem="oWv-pY-dOx" secondAttribute="top" constant="10" id="klJ-oV-3ja"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="ld3-Hc-EJv" secondAttribute="trailing" constant="20" id="uvQ-n7-wYc"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="image" destination="dGt-gJ-SOz" id="dhE-gT-u9O"/>
+                                            <outlet property="label" destination="ld3-Hc-EJv" id="baE-dh-sR1"/>
+                                            <segue destination="YmO-xl-kDo" kind="show" id="3ne-Pl-14X"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -224,7 +247,7 @@
                             <constraint firstItem="ksA-Rk-Ne5" firstAttribute="top" secondItem="sVd-Fv-B9G" secondAttribute="bottom" id="Yt7-9w-pM7"/>
                             <constraint firstItem="OJ1-F5-MyH" firstAttribute="trailing" secondItem="K2X-g5-ZLb" secondAttribute="trailingMargin" id="Zcd-X0-dEf"/>
                             <constraint firstItem="MuI-6c-9ds" firstAttribute="top" secondItem="OJ1-F5-MyH" secondAttribute="bottom" constant="20" id="qye-dH-1Sb"/>
-                            <constraint firstItem="OJ1-F5-MyH" firstAttribute="top" secondItem="ksA-Rk-Ne5" secondAttribute="bottom" constant="20" id="s6U-B0-oz5"/>
+                            <constraint firstItem="OJ1-F5-MyH" firstAttribute="top" secondItem="ksA-Rk-Ne5" secondAttribute="bottom" constant="10" id="s6U-B0-oz5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Teazy" id="rxs-bd-I6e"/>
@@ -239,7 +262,7 @@
         <!--Cocktails-->
         <scene sceneID="Q5J-8k-xef">
             <objects>
-                <viewController id="YmO-xl-kDo" sceneMemberID="viewController">
+                <viewController id="YmO-xl-kDo" customClass="CocktailViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GfO-nd-jeq"/>
                         <viewControllerLayoutGuide type="bottom" id="hMZ-6c-mZg"/>
@@ -247,13 +270,114 @@
                     <view key="view" contentMode="scaleToFill" id="d2j-fS-48q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocktail-mojito-recette" translatesAutoresizingMaskIntoConstraints="NO" id="4Hp-u5-WC8">
+                                <rect key="frame" x="102" y="84" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="oRd-Db-21N"/>
+                                    <constraint firstAttribute="width" constant="170" id="xbf-ti-J3E"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRÉDIENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvN-Pl-rSL">
+                                <rect key="frame" x="137" y="294" width="102" height="16"/>
+                                <color key="backgroundColor" red="1" green="0.43529411764705883" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sM-sU-GZ7">
+                                <rect key="frame" x="0.0" y="335" width="375" height="56"/>
+                                <color key="backgroundColor" red="0.21568627450980393" green="0.27843137254901962" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="HX9-X8-Al5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 cl de sirop de sucre de canne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXY-D7-HRg">
+                                <rect key="frame" x="20" y="355" width="335" height="16"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bx-Fl-bdo">
+                                <rect key="frame" x="-1" y="392" width="377" height="56"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.2784313725" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="OTT-mT-tcN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 feuille de menthes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUp-i3-XjY">
+                                <rect key="frame" x="117" y="412" width="142" height="16"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-OC-atL">
+                                <rect key="frame" x="0.0" y="449" width="375" height="56"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.2784313725" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="hlw-X5-g1f"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 cl de jus de citron vert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jy2-WN-6Tc">
+                                <rect key="frame" x="103" y="469" width="168" height="16"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rV8-sl-tgt">
+                                <rect key="frame" x="-1" y="506" width="377" height="56"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.2784313725" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="0SK-3s-EFc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 cl de rhum cubain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S80-2Q-Ops">
+                                <rect key="frame" x="118" y="526" width="139" height="16"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17621527777777779" green="0.43622504340277779" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GL1-OC-atL" firstAttribute="leading" secondItem="1sM-sU-GZ7" secondAttribute="leading" id="0Uy-yO-J4m"/>
+                            <constraint firstItem="1sM-sU-GZ7" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="2Ws-fq-16R"/>
+                            <constraint firstItem="ZXY-D7-HRg" firstAttribute="leading" secondItem="d2j-fS-48q" secondAttribute="leading" constant="20" id="6g5-zO-nxu"/>
+                            <constraint firstItem="1sM-sU-GZ7" firstAttribute="top" secondItem="HvN-Pl-rSL" secondAttribute="bottom" constant="25" id="6r8-pH-XTH"/>
+                            <constraint firstItem="9Bx-Fl-bdo" firstAttribute="top" secondItem="1sM-sU-GZ7" secondAttribute="bottom" constant="1" id="7Gv-gn-pGb"/>
+                            <constraint firstItem="HvN-Pl-rSL" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="8So-9J-cgo"/>
+                            <constraint firstItem="S80-2Q-Ops" firstAttribute="centerY" secondItem="rV8-sl-tgt" secondAttribute="centerY" id="G7Q-KT-hu7"/>
+                            <constraint firstAttribute="trailing" secondItem="ZXY-D7-HRg" secondAttribute="trailing" constant="20" id="JQT-ds-M3R"/>
+                            <constraint firstItem="ZXY-D7-HRg" firstAttribute="centerY" secondItem="1sM-sU-GZ7" secondAttribute="centerY" id="KeK-vO-M0V"/>
+                            <constraint firstItem="rV8-sl-tgt" firstAttribute="leading" secondItem="d2j-fS-48q" secondAttribute="leadingMargin" constant="-17" id="Mgb-n2-Udn"/>
+                            <constraint firstItem="GL1-OC-atL" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="Nkg-mf-6Df"/>
+                            <constraint firstAttribute="trailing" secondItem="1sM-sU-GZ7" secondAttribute="trailing" id="Nq5-8W-I1Y"/>
+                            <constraint firstItem="Jy2-WN-6Tc" firstAttribute="centerY" secondItem="GL1-OC-atL" secondAttribute="centerY" id="Qjw-lq-unj"/>
+                            <constraint firstItem="Jy2-WN-6Tc" firstAttribute="centerX" secondItem="GL1-OC-atL" secondAttribute="centerX" id="SYX-sO-eRh"/>
+                            <constraint firstItem="GL1-OC-atL" firstAttribute="top" secondItem="9Bx-Fl-bdo" secondAttribute="bottom" constant="1" id="TKy-oq-nZG"/>
+                            <constraint firstItem="9Bx-Fl-bdo" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="UdC-Ca-VNf"/>
+                            <constraint firstItem="HvN-Pl-rSL" firstAttribute="top" secondItem="4Hp-u5-WC8" secondAttribute="bottom" constant="40" id="Vix-Pi-9vx"/>
+                            <constraint firstItem="S80-2Q-Ops" firstAttribute="centerX" secondItem="rV8-sl-tgt" secondAttribute="centerX" id="Z9R-oI-MKO"/>
+                            <constraint firstItem="rV8-sl-tgt" firstAttribute="top" secondItem="GL1-OC-atL" secondAttribute="bottom" constant="1" id="a72-yk-x7u"/>
+                            <constraint firstItem="mUp-i3-XjY" firstAttribute="centerY" secondItem="9Bx-Fl-bdo" secondAttribute="centerY" id="bGe-Cu-p37"/>
+                            <constraint firstItem="1sM-sU-GZ7" firstAttribute="leading" secondItem="d2j-fS-48q" secondAttribute="leading" id="bTp-IJ-0s2"/>
+                            <constraint firstItem="mUp-i3-XjY" firstAttribute="centerX" secondItem="9Bx-Fl-bdo" secondAttribute="centerX" id="feh-l1-tcq"/>
+                            <constraint firstItem="9Bx-Fl-bdo" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="fy8-ic-vwR"/>
+                            <constraint firstItem="4Hp-u5-WC8" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="lOa-7R-f0N"/>
+                            <constraint firstItem="rV8-sl-tgt" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="nSf-GU-TaV"/>
+                            <constraint firstItem="9Bx-Fl-bdo" firstAttribute="centerX" secondItem="d2j-fS-48q" secondAttribute="centerX" id="tWL-YS-3cs"/>
+                            <constraint firstItem="4Hp-u5-WC8" firstAttribute="top" secondItem="GfO-nd-jeq" secondAttribute="bottom" constant="20" id="xCO-mN-yey"/>
+                            <constraint firstItem="rV8-sl-tgt" firstAttribute="leading" secondItem="9Bx-Fl-bdo" secondAttribute="leading" id="yPh-GT-pRa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cocktails" id="mjc-Fk-twC"/>
+                    <connections>
+                        <outlet property="cocktailImage" destination="4Hp-u5-WC8" id="2be-T0-CGa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jEh-XZ-IB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1210" y="4007"/>
+            <point key="canvasLocation" x="1208.8" y="4006.1469265367318"/>
         </scene>
         <!--Teazy-->
         <scene sceneID="E9u-fm-Rmk">
@@ -690,6 +814,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cocktail-mojito-recette" width="16" height="16"/>
         <image name="illu-beers" width="452" height="372"/>
         <image name="illu-champagne" width="350" height="436"/>
         <image name="illu-wine" width="380" height="342"/>
