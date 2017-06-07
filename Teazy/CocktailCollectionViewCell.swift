@@ -10,12 +10,5 @@ import UIKit
 
 class CocktailCollectionViewCell: UICollectionViewCell {
 
-    var cocktailImageView: UIImageView!
-    
-    override func awakeFromNib() {
-        cocktailImageView = UIImageView(frame: contentView.frame)
-        cocktailImageView.contentMode = .scaleAspectFill
-        cocktailImageView.clipsToBounds = true
-        contentView.addSubview(cocktailImageView)
-    }
+    @IBOutlet weak var image: UIImageView!
 }

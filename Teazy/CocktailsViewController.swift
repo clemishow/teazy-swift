@@ -8,33 +8,35 @@
 
 import UIKit
 
-class CocktailsViewController: UIViewController {
+class CocktailsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var collectionView: UICollectionView!
-    var images = [UIImage(named: "illu-beer"), UIImage(named: "illu-champagne"), UIImage(named: "illu-wine")]
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    var images = ["tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1", "tap1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
+        self.collectionView.backgroundColor = .clear
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
         
-        
-        let url = URL(string: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
-        URLSession.shared.dataTask(with: url!, completionHandler: {
-            (data, response, error) in
-            if(error != nil){
-                print("error")
-            }else{
-                do{
-                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
-                    
-                    print(json)
-                    
-                }catch let error as NSError{
-                    print(error)
-                }
-            }
-        }).resume()
+//        let url = URL(string: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+//        URLSession.shared.dataTask(with: url!, completionHandler: {
+//            (data, response, error) in
+//            if(error != nil){
+//                print("error")
+//            }else{
+//                do{
+//                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
+//                    
+//                    print(json)
+//                    
+//                }catch let error as NSError{
+//                    print(error)
+//                }
+//            }
+//        }).resume()
 
     }
 
@@ -43,37 +45,14 @@ class CocktailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // Intializing a collectionView and adding it to the VC's current view
-    func setupCollectionView() {
-        let layout = UICollectionViewFlowLayout()
-        collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
-        collectionView.register(CocktailCollectionViewCell.self, forCellWithReuseIdentifier: "cocktailCell")
-        collectionView.backgroundColor = UIColor.green
-        view.addSubview(collectionView)
-    }
-}
-
-extension CocktailsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    // Specifying the number of sections in the collectionView
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    // Specifying the number of calls in the given section
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cocktailCell", for: indexPath) as! CocktailCollectionViewCell
-        cell.awakeFromNib()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! CocktailCollectionViewCell
+        cell.image.image = UIImage(named: images[indexPath.row])
         return cell
     }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let cocktailCell = cell as! CocktailCollectionViewCell
-        
-        foodCell.foodImageView.image = images[indexPath.row]
-    }
 }
+

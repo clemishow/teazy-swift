@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D74693BA1EE8149A0068FD28 /* CocktailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74693B91EE8149A0068FD28 /* CocktailCollectionViewCell.swift */; };
-		D74693BB1EE81A800068FD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
+		D74693BD1EE81F4E0068FD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
 		D74907431EE468DE00B2FAE0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907421EE468DE00B2FAE0 /* TabBarController.swift */; };
 		D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907441EE46A7700B2FAE0 /* HomeViewController.swift */; };
 		D74907471EE46A9100B2FAE0 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907461EE46A9100B2FAE0 /* PartyViewController.swift */; };
@@ -234,7 +234,7 @@
 				D7AA145E1EE453FA0052C6D3 /* StepTwoViewController.swift in Sources */,
 				D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */,
 				D74907431EE468DE00B2FAE0 /* TabBarController.swift in Sources */,
-				D74693BB1EE81A800068FD28 /* AppDelegate.swift in Sources */,
+				D74693BD1EE81F4E0068FD28 /* AppDelegate.swift in Sources */,
 				D74693BA1EE8149A0068FD28 /* CocktailCollectionViewCell.swift in Sources */,
 				D7C6277F1EE48B7C00D967EC /* CocktailsViewController.swift in Sources */,
 				D764698A1EE5BB5200E1877E /* PartyModel.swift in Sources */,
