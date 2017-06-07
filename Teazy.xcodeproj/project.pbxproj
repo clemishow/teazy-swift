@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D74693BA1EE8149A0068FD28 /* CocktailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74693B91EE8149A0068FD28 /* CocktailCollectionViewCell.swift */; };
+		D74693BB1EE81A800068FD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
 		D74907431EE468DE00B2FAE0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907421EE468DE00B2FAE0 /* TabBarController.swift */; };
 		D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907441EE46A7700B2FAE0 /* HomeViewController.swift */; };
 		D74907471EE46A9100B2FAE0 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74907461EE46A9100B2FAE0 /* PartyViewController.swift */; };
@@ -16,7 +18,6 @@
 		D76469851EE59B7E00E1877E /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D76469821EE59B7E00E1877E /* ProximaNova-Semibold.otf */; };
 		D76469871EE5B8D400E1877E /* CreatePartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76469861EE5B8D400E1877E /* CreatePartyViewController.swift */; };
 		D764698A1EE5BB5200E1877E /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76469891EE5BB5200E1877E /* PartyModel.swift */; };
-		D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53D1EDA03A400B9C598 /* AppDelegate.swift */; };
 		D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768A53F1EDA03A400B9C598 /* ViewController.swift */; };
 		D768A5431EDA03A400B9C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768A5411EDA03A400B9C598 /* Main.storyboard */; };
 		D768A5451EDA03A400B9C598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D768A5441EDA03A400B9C598 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D74693B91EE8149A0068FD28 /* CocktailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailCollectionViewCell.swift; sourceTree = "<group>"; };
 		D74907421EE468DE00B2FAE0 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D74907441EE46A7700B2FAE0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D74907461EE46A9100B2FAE0 /* PartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		D768A53C1EDA03A400B9C598 /* Teazy */ = {
 			isa = PBXGroup;
 			children = (
+				D74693B91EE8149A0068FD28 /* CocktailCollectionViewCell.swift */,
 				D76469881EE5BAD800E1877E /* Models */,
 				D764697D1EE59A0700E1877E /* Fonts */,
 				D7AA145A1EE453360052C6D3 /* Controllers */,
@@ -231,10 +234,11 @@
 				D7AA145E1EE453FA0052C6D3 /* StepTwoViewController.swift in Sources */,
 				D768A5401EDA03A400B9C598 /* ViewController.swift in Sources */,
 				D74907431EE468DE00B2FAE0 /* TabBarController.swift in Sources */,
+				D74693BB1EE81A800068FD28 /* AppDelegate.swift in Sources */,
+				D74693BA1EE8149A0068FD28 /* CocktailCollectionViewCell.swift in Sources */,
 				D7C6277F1EE48B7C00D967EC /* CocktailsViewController.swift in Sources */,
 				D764698A1EE5BB5200E1877E /* PartyModel.swift in Sources */,
 				D76469871EE5B8D400E1877E /* CreatePartyViewController.swift in Sources */,
-				D768A53E1EDA03A400B9C598 /* AppDelegate.swift in Sources */,
 				D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */,
 				D7C6277D1EE480DC00D967EC /* ProfileViewController.swift in Sources */,
 				D7AA145C1EE453A10052C6D3 /* StepOneViewController.swift in Sources */,
