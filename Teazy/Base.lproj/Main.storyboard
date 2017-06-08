@@ -224,33 +224,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-gJ-SOz">
-                                                    <rect key="frame" x="20" y="10" width="120" height="112"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="112" id="wQy-Hb-VGU"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="20" y="20" width="120" height="112"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld3-Hc-EJv">
-                                                    <rect key="frame" x="28" y="136" width="104" height="14"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.18431372549019609" green="0.24705882352941178" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottomMargin" secondItem="ld3-Hc-EJv" secondAttribute="bottom" constant="2" id="2y0-xW-rEZ"/>
-                                            <constraint firstItem="ld3-Hc-EJv" firstAttribute="leading" secondItem="oWv-pY-dOx" secondAttribute="leadingMargin" constant="20" id="HIc-c7-Big"/>
                                             <constraint firstItem="dGt-gJ-SOz" firstAttribute="centerX" secondItem="oWv-pY-dOx" secondAttribute="centerX" id="OoJ-Rq-wQm"/>
                                             <constraint firstItem="dGt-gJ-SOz" firstAttribute="leading" secondItem="oWv-pY-dOx" secondAttribute="leading" constant="20" id="YpB-1P-Mct"/>
-                                            <constraint firstItem="ld3-Hc-EJv" firstAttribute="centerX" secondItem="oWv-pY-dOx" secondAttribute="centerX" id="cci-Y4-NW5"/>
                                             <constraint firstAttribute="trailing" secondItem="dGt-gJ-SOz" secondAttribute="trailing" constant="20" id="hTy-Nb-D7T"/>
-                                            <constraint firstItem="dGt-gJ-SOz" firstAttribute="top" secondItem="oWv-pY-dOx" secondAttribute="top" constant="10" id="klJ-oV-3ja"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="ld3-Hc-EJv" secondAttribute="trailing" constant="20" id="uvQ-n7-wYc"/>
+                                            <constraint firstItem="dGt-gJ-SOz" firstAttribute="top" secondItem="oWv-pY-dOx" secondAttribute="top" constant="20" id="klJ-oV-3ja"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="dGt-gJ-SOz" secondAttribute="bottom" constant="20" id="l3Z-9d-hrz"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="image" destination="dGt-gJ-SOz" id="dhE-gT-u9O"/>
-                                            <outlet property="label" destination="ld3-Hc-EJv" id="baE-dh-sR1"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -298,7 +285,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRÉDIENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvN-Pl-rSL">
-                                <rect key="frame" x="137.5" y="294" width="101.5" height="16"/>
+                                <rect key="frame" x="137" y="294" width="101.5" height="16"/>
                                 <color key="backgroundColor" red="1" green="0.43529411764705883" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -325,7 +312,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 feuille de menthes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUp-i3-XjY">
-                                <rect key="frame" x="116.5" y="412" width="142" height="16"/>
+                                <rect key="frame" x="117" y="412" width="142" height="16"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -351,7 +338,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 cl de rhum cubain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S80-2Q-Ops">
-                                <rect key="frame" x="118.5" y="526" width="138.5" height="16"/>
+                                <rect key="frame" x="119" y="526" width="138.5" height="16"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -439,7 +426,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 rue du pastis, 75003, Paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqQ-jm-CNf">
-                                        <rect key="frame" x="108" y="78" width="209" height="16"/>
+                                        <rect key="frame" x="108" y="78" width="208.5" height="16"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -535,6 +522,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Teazy" id="ElV-QB-xMW"/>
+                    <connections>
+                        <outlet property="picture" destination="Yom-85-Z55" id="dpb-KY-4v8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBs-CU-GQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -689,18 +679,24 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Adresse du lieu">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myh-Ae-9V3">
                                 <rect key="frame" x="26" y="318" width="323" height="30"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nom de la soirée ">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" metaFont="smallSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -712,7 +708,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Date ">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -727,7 +723,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Heure">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" metaFont="smallSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -916,7 +912,7 @@
                                         </cells>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invitez vos amis !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDO-AC-QaQ">
-                                        <rect key="frame" x="20" y="114" width="124" height="16"/>
+                                        <rect key="frame" x="20" y="114" width="123.5" height="16"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.8399507705" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

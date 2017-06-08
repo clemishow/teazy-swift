@@ -18,7 +18,7 @@ class CreatePartyViewController: UIViewController, UICollectionViewDelegate, UIC
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var friendsCollection: UICollectionView!
     
-    let images = ["profile", "profile", "profile", "addmorefriends"]
+    let images = ["profile-noemie", "profile-robin", "profile-justin"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
