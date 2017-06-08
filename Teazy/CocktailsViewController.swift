@@ -12,7 +12,7 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var images = ["tap1", "tap1", "tap1", "tap1", "tap1"]
+    var images = ["acapulco_acapulco", "banana_balu_blue_hawaii", "banana_split", "Blue_lagoon", "Bubble_gloss", "douceur_exotique", "gimlet", "Green_russian", "mardi_gras", "Mojito", "rainbow_in_paradise", "sidecar_rhum"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +57,18 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("selected row is" , indexPath.row)
+        performSegue(withIdentifier: "cocktail", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("1")
+        if segue.identifier == "cocktail" {
+                print("2")
+            if let destination = segue.destination as? CocktailViewController {
+                print("3")
+                destination.passedData = sender as? Int
+            }
+        }
     }
 }
 

@@ -232,7 +232,6 @@
                                         <connections>
                                             <outlet property="image" destination="dGt-gJ-SOz" id="dhE-gT-u9O"/>
                                             <outlet property="label" destination="ld3-Hc-EJv" id="baE-dh-sR1"/>
-                                            <segue destination="YmO-xl-kDo" kind="show" id="3ne-Pl-14X"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -253,6 +252,7 @@
                     <navigationItem key="navigationItem" title="Teazy" id="rxs-bd-I6e"/>
                     <connections>
                         <outlet property="collectionView" destination="OJ1-F5-MyH" id="f2H-Lm-ifR"/>
+                        <segue destination="YmO-xl-kDo" kind="show" identifier="cocktail" id="Lgg-7I-9qt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvi-13-KmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -262,7 +262,7 @@
         <!--Cocktails-->
         <scene sceneID="Q5J-8k-xef">
             <objects>
-                <viewController id="YmO-xl-kDo" customClass="CocktailViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cocktail" id="YmO-xl-kDo" customClass="CocktailViewController" customModule="Teazy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GfO-nd-jeq"/>
                         <viewControllerLayoutGuide type="bottom" id="hMZ-6c-mZg"/>
@@ -279,7 +279,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRÉDIENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvN-Pl-rSL">
-                                <rect key="frame" x="137.5" y="294" width="101.5" height="16"/>
+                                <rect key="frame" x="137" y="294" width="101.5" height="16"/>
                                 <color key="backgroundColor" red="1" green="0.43529411764705883" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -306,7 +306,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 feuille de menthes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUp-i3-XjY">
-                                <rect key="frame" x="116.5" y="412" width="142" height="16"/>
+                                <rect key="frame" x="117" y="412" width="142" height="16"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -332,7 +332,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 cl de rhum cubain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S80-2Q-Ops">
-                                <rect key="frame" x="118.5" y="526" width="138.5" height="16"/>
+                                <rect key="frame" x="119" y="526" width="138.5" height="16"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -539,7 +539,6 @@
                                                 <action selector="goBack" destination="vaD-NM-wWe" id="FfW-5c-c0k"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Sauvegarder" id="BuI-vF-u0H"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -600,11 +599,11 @@
                                     <constraint firstAttribute="height" constant="120" id="wGg-Om-fKr"/>
                                 </constraints>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ry6-Ms-KR1">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="25" minimumInteritemSpacing="25" id="ry6-Ms-KR1">
                                     <size key="itemSize" width="60" height="60"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collection_cell" id="yaK-ve-dhY" customClass="FriendsCollectionViewCell" customModule="Teazy" customModuleProvider="target">
@@ -637,6 +636,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.8399507705479452" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jv3-7R-YDK">
+                                <rect key="frame" x="36" y="599" width="303" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5Fb-MH-KSf"/>
+                                </constraints>
+                                <state key="normal" title="Valider"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -647,6 +653,7 @@
                             <constraint firstItem="UPx-aL-4Zo" firstAttribute="top" secondItem="qmb-CC-M3s" secondAttribute="bottom" constant="8" id="8PL-GA-yF2"/>
                             <constraint firstItem="myh-Ae-9V3" firstAttribute="top" secondItem="E0j-vH-p2d" secondAttribute="bottom" constant="37" id="AbL-Gh-sgw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E0j-vH-p2d" secondAttribute="trailing" constant="10" id="But-V3-L9h"/>
+                            <constraint firstItem="B4E-Mz-aD0" firstAttribute="top" secondItem="Jv3-7R-YDK" secondAttribute="bottom" constant="20" id="Ff8-OY-1ha"/>
                             <constraint firstItem="SY7-R2-tYH" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leading" id="Ffn-0f-rcb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZTE-rb-H9Z" secondAttribute="trailing" constant="10" id="H3j-e1-KkA"/>
                             <constraint firstItem="UMU-sX-T04" firstAttribute="top" secondItem="ZTE-rb-H9Z" secondAttribute="bottom" constant="39" id="KKk-uO-ens"/>
@@ -655,6 +662,7 @@
                             <constraint firstItem="ZTE-rb-H9Z" firstAttribute="centerX" secondItem="esT-Dn-DGT" secondAttribute="centerX" id="QNp-x5-znA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="myh-Ae-9V3" secondAttribute="trailing" constant="10" id="UvU-Gs-RgM"/>
                             <constraint firstItem="UMU-sX-T04" firstAttribute="top" secondItem="ZTE-rb-H9Z" secondAttribute="bottom" constant="39" id="VBN-2m-ZWs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jv3-7R-YDK" secondAttribute="trailing" constant="20" id="W3y-Ye-65U"/>
                             <constraint firstItem="SY7-R2-tYH" firstAttribute="top" secondItem="gYX-HY-XYu" secondAttribute="bottom" constant="8" id="YHR-KG-TmC"/>
                             <constraint firstItem="E0j-vH-p2d" firstAttribute="leading" secondItem="UMU-sX-T04" secondAttribute="trailing" constant="47" id="awy-te-aDh"/>
                             <constraint firstItem="UMU-sX-T04" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="10" id="bU8-zQ-9hv"/>
@@ -666,10 +674,12 @@
                             <constraint firstItem="UPx-aL-4Zo" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leading" id="nuS-bP-BlP"/>
                             <constraint firstAttribute="trailing" secondItem="SY7-R2-tYH" secondAttribute="trailing" id="sK2-2A-IKa"/>
                             <constraint firstItem="myh-Ae-9V3" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="10" id="ugL-Oa-kuU"/>
+                            <constraint firstItem="Jv3-7R-YDK" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="20" id="wYF-39-IGM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="UIBarButtonCancel" destination="yYY-OJ-Uco" id="F7K-m7-ir4"/>
+                        <outlet property="button" destination="Jv3-7R-YDK" id="rc7-5H-MA1"/>
                         <outlet property="friendsCollection" destination="SY7-R2-tYH" id="Qv6-V8-fpu"/>
                         <outlet property="inputAdress" destination="ZTE-rb-H9Z" id="DiL-4y-KQc"/>
                         <outlet property="inputDate" destination="UMU-sX-T04" id="Fxu-E8-cmh"/>

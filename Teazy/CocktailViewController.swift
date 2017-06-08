@@ -11,10 +11,13 @@ import UIKit
 class CocktailViewController: UIViewController {
 
     @IBOutlet weak var cocktailImage: UIImageView!
+    var passedData: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
-
+        
+        print("Yeah bitch : \(passedData)")
         // Do any additional setup after loading the view.
     }
 

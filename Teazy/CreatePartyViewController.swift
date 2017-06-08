@@ -15,9 +15,10 @@ class CreatePartyViewController: UIViewController, UICollectionViewDelegate, UIC
     @IBOutlet weak var inputDate: UITextField!
     @IBOutlet weak var inputHour: UITextField!
     @IBOutlet weak var inputName: UITextField!
+    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var friendsCollection: UICollectionView!
     
-    let images = ["profile", "profile", "profile", "profile", "profile", "profile"]
+    let images = ["profile", "profile", "profile", "addmorefriends"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,11 @@ class CreatePartyViewController: UIViewController, UICollectionViewDelegate, UIC
         friendsCollection.delegate = self
         friendsCollection.dataSource = self
         friendsCollection.backgroundColor = UIColor(red: 47/255, green: 63/255, blue: 83/255, alpha: 1)
+        
+        // Button 
+        self.button.backgroundColor = UIColor(red: 244/255, green: 179/255, blue: 80/255, alpha: 1)
+        self.button.layer.cornerRadius = 3
+        self.button.setTitleColor(UIColor.white, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
