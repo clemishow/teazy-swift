@@ -12,7 +12,7 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var images = ["Acapulco", "Banana_Balu_Blue_Hawaii", "Banana_split", "Bubble_gloss", "Cosmopolitan", "Douceur_exotique", "Gimlet", "Gin_tonic", "Green_russian", "Mardis_gras", "Margarita", "Mojito", "Pina_colada", "Rainbow_in_paradise", "Raspberry_spritzer", "Sidecar_rhum"]
+    var images = ["Acapulco", "Banana_Balu_Blue_Hawaii", "Banana_split", "Bubble_gloss", "Cosmopolitan", "Douceur_exotique", "Gimlet", "Gin_tonic", "Green_russian", "Mardis_gras", "Margarita", "Mojito", "Pina_colada", "Rainbow_in_paradise"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -409,13 +409,136 @@
                     <view key="view" contentMode="scaleToFill" id="fdi-FM-IhL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Yom-85-Z55">
+                                <rect key="frame" x="152" y="94" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="4MJ-77-9AK"/>
+                                    <constraint firstAttribute="height" constant="70" id="uLX-pG-PfY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salut Clément" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU5-g6-bH6">
+                                <rect key="frame" x="36" y="182" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyq-xN-f6n">
+                                <rect key="frame" x="0.0" y="233" width="375" height="385"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htG-8r-bEs">
+                                        <rect key="frame" x="20" y="78" width="59" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informations personnelles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27f-Xu-jCy">
+                                        <rect key="frame" x="20" y="20" width="335" height="18"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 rue du pastis, 75003, Paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqQ-jm-CNf">
+                                        <rect key="frame" x="108" y="78" width="209" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1c1-ns-eFU">
+                                        <rect key="frame" x="0.0" y="109" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="aeg-vw-8hD"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glx-BT-P5L">
+                                        <rect key="frame" x="20" y="128" width="59" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clem_78110@hotmail.fr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZF-Ze-Ukt">
+                                        <rect key="frame" x="108" y="128" width="158" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ovk-Z9-d7j">
+                                        <rect key="frame" x="0.0" y="159" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="QMd-1V-ncW"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numéro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fox-zA-rlv">
+                                        <rect key="frame" x="20" y="178" width="58" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06 42 10 22 75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYO-eC-N8Y">
+                                        <rect key="frame" x="107" y="178" width="106" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebV-Cb-PEt">
+                                        <rect key="frame" x="1" y="209" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="YkO-Fy-kte"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="htG-8r-bEs" firstAttribute="top" secondItem="27f-Xu-jCy" secondAttribute="bottom" constant="40" id="0qy-p7-BKs"/>
+                                    <constraint firstItem="Ovk-Z9-d7j" firstAttribute="trailing" secondItem="1c1-ns-eFU" secondAttribute="trailing" id="6F0-ca-A9M"/>
+                                    <constraint firstItem="UqQ-jm-CNf" firstAttribute="baseline" secondItem="htG-8r-bEs" secondAttribute="baseline" id="6sb-wi-kHs"/>
+                                    <constraint firstAttribute="trailing" secondItem="ebV-Cb-PEt" secondAttribute="trailing" constant="-1" id="Cqq-xm-mFO"/>
+                                    <constraint firstItem="ebV-Cb-PEt" firstAttribute="leading" secondItem="xyq-xN-f6n" secondAttribute="leading" constant="1" id="Ddb-qb-u39"/>
+                                    <constraint firstItem="27f-Xu-jCy" firstAttribute="leading" secondItem="xyq-xN-f6n" secondAttribute="leading" constant="20" id="Ew9-Vv-e1o"/>
+                                    <constraint firstItem="bYO-eC-N8Y" firstAttribute="top" secondItem="Ovk-Z9-d7j" secondAttribute="bottom" constant="18" id="FEp-ap-T7m"/>
+                                    <constraint firstItem="glx-BT-P5L" firstAttribute="leading" secondItem="xyq-xN-f6n" secondAttribute="leading" constant="20" id="Fp5-Po-N49"/>
+                                    <constraint firstItem="UqQ-jm-CNf" firstAttribute="leading" secondItem="htG-8r-bEs" secondAttribute="trailing" constant="29" id="JQk-w6-ka4"/>
+                                    <constraint firstItem="ebV-Cb-PEt" firstAttribute="top" secondItem="bYO-eC-N8Y" secondAttribute="bottom" constant="15" id="M9L-YO-ghV"/>
+                                    <constraint firstItem="1c1-ns-eFU" firstAttribute="top" secondItem="UqQ-jm-CNf" secondAttribute="bottom" constant="15" id="NJs-Vo-BL1"/>
+                                    <constraint firstItem="AZF-Ze-Ukt" firstAttribute="leading" secondItem="glx-BT-P5L" secondAttribute="trailing" constant="29" id="Op0-qR-Gk8"/>
+                                    <constraint firstItem="bYO-eC-N8Y" firstAttribute="baseline" secondItem="Fox-zA-rlv" secondAttribute="baseline" id="SDY-Mb-w1x"/>
+                                    <constraint firstAttribute="trailing" secondItem="27f-Xu-jCy" secondAttribute="trailing" constant="20" id="WPn-zl-G4M"/>
+                                    <constraint firstItem="27f-Xu-jCy" firstAttribute="top" secondItem="xyq-xN-f6n" secondAttribute="top" constant="20" id="XRT-qU-4Yg"/>
+                                    <constraint firstItem="Fox-zA-rlv" firstAttribute="top" secondItem="Ovk-Z9-d7j" secondAttribute="bottom" constant="18" id="XTv-yT-mJE"/>
+                                    <constraint firstItem="bYO-eC-N8Y" firstAttribute="leading" secondItem="Fox-zA-rlv" secondAttribute="trailing" constant="29" id="XoQ-nk-bxJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1c1-ns-eFU" secondAttribute="trailing" id="aUn-rQ-fx3"/>
+                                    <constraint firstItem="htG-8r-bEs" firstAttribute="leading" secondItem="xyq-xN-f6n" secondAttribute="leading" constant="20" id="gdW-vx-0vd"/>
+                                    <constraint firstItem="Ovk-Z9-d7j" firstAttribute="leading" secondItem="1c1-ns-eFU" secondAttribute="leading" id="kTz-M5-3NJ"/>
+                                    <constraint firstItem="Ovk-Z9-d7j" firstAttribute="top" secondItem="AZF-Ze-Ukt" secondAttribute="bottom" constant="15" id="mI6-aC-IU8"/>
+                                    <constraint firstItem="Ovk-Z9-d7j" firstAttribute="centerX" secondItem="AZF-Ze-Ukt" secondAttribute="centerX" id="ncG-1H-7V0"/>
+                                    <constraint firstItem="1c1-ns-eFU" firstAttribute="leading" secondItem="xyq-xN-f6n" secondAttribute="leading" id="pQd-MI-dfm"/>
+                                    <constraint firstItem="Fox-zA-rlv" firstAttribute="leading" secondItem="xyq-xN-f6n" secondAttribute="leading" constant="20" id="sJl-NQ-Zr7"/>
+                                    <constraint firstItem="Ovk-Z9-d7j" firstAttribute="top" secondItem="xyq-xN-f6n" secondAttribute="top" constant="159" id="wuQ-ye-x3m"/>
+                                    <constraint firstItem="AZF-Ze-Ukt" firstAttribute="baseline" secondItem="glx-BT-P5L" secondAttribute="baseline" id="zTh-AS-NJS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xyq-xN-f6n" firstAttribute="leading" secondItem="fdi-FM-IhL" secondAttribute="leading" id="7Vg-bi-29J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pU5-g6-bH6" secondAttribute="trailing" constant="20" id="CgI-xj-mPu"/>
+                            <constraint firstItem="Yom-85-Z55" firstAttribute="centerX" secondItem="fdi-FM-IhL" secondAttribute="centerX" id="cO7-PO-lOV"/>
+                            <constraint firstItem="ffB-Sz-LyA" firstAttribute="top" secondItem="xyq-xN-f6n" secondAttribute="bottom" id="ekR-rq-YY5"/>
+                            <constraint firstItem="pU5-g6-bH6" firstAttribute="leading" secondItem="fdi-FM-IhL" secondAttribute="leadingMargin" constant="20" id="hEN-M1-bYq"/>
+                            <constraint firstItem="xyq-xN-f6n" firstAttribute="top" secondItem="pU5-g6-bH6" secondAttribute="bottom" constant="30" id="lIq-j8-Hks"/>
+                            <constraint firstAttribute="trailing" secondItem="xyq-xN-f6n" secondAttribute="trailing" id="sEv-Ih-Udg"/>
+                            <constraint firstItem="pU5-g6-bH6" firstAttribute="top" secondItem="Yom-85-Z55" secondAttribute="bottom" constant="18" id="xxe-Oo-xdH"/>
+                            <constraint firstItem="Yom-85-Z55" firstAttribute="top" secondItem="X5G-RU-6Dd" secondAttribute="bottom" constant="30" id="zJ6-gD-yFO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Teazy" id="ElV-QB-xMW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBs-CU-GQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1959" y="3269"/>
+            <point key="canvasLocation" x="1957.5999999999999" y="3268.5157421289359"/>
         </scene>
         <!--Teazy-->
         <scene sceneID="xaK-YX-7BE">
