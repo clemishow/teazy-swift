@@ -725,7 +725,7 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bEa-17-Koq">
                                 <rect key="frame" x="36" y="74" width="303" height="29"/>
                                 <segments>
-                                    <segment title="First"/>
+                                    <segment title="Informations"/>
                                     <segment title="Cocktails"/>
                                 </segments>
                                 <connections>
@@ -916,15 +916,148 @@
                                     <constraint firstItem="Ilh-l8-rlN" firstAttribute="leading" secondItem="y4U-ve-1jb" secondAttribute="leading" constant="20" id="ywQ-QN-0qo"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMp-Ei-4yE">
+                                <rect key="frame" x="0.0" y="122" width="375" height="496"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRÉDIENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adH-Jh-UdZ">
+                                        <rect key="frame" x="20" y="158" width="335" height="16"/>
+                                        <color key="backgroundColor" red="1" green="0.43529411759999997" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cosmopolitan" translatesAutoresizingMaskIntoConstraints="NO" id="MH0-K0-0N4">
+                                        <rect key="frame" x="20" y="20" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="4D8-BY-Wbn"/>
+                                            <constraint firstAttribute="height" constant="90" id="zkJ-m8-YXi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mojito" translatesAutoresizingMaskIntoConstraints="NO" id="dBZ-8x-Fbt">
+                                        <rect key="frame" x="145" y="20" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="M1L-6w-3II"/>
+                                            <constraint firstAttribute="width" constant="90" id="d7x-dY-Cqm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mardis_gras" translatesAutoresizingMaskIntoConstraints="NO" id="ity-yv-Q4u">
+                                        <rect key="frame" x="265" y="20" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="LbE-j0-Eat"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="nXf-z6-Of8"/>
+                                            <constraint firstAttribute="height" constant="90" id="s3P-1z-1pQ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="sxM-QA-3Jg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bières" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YG-Xg-unz">
+                                        <rect key="frame" x="20" y="204" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyO-g0-fAd">
+                                        <rect key="frame" x="71" y="204" width="18" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pastis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lh-vY-dNo">
+                                        <rect key="frame" x="20" y="250" width="41" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tce-7s-5sn">
+                                        <rect key="frame" x="67" y="250" width="15" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feuille de menthe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prQ-wc-thd">
+                                        <rect key="frame" x="20" y="296" width="127" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptK-AC-Ucq">
+                                        <rect key="frame" x="153" y="296" width="18" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vodka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="403-cC-Pk5">
+                                        <rect key="frame" x="20" y="342" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3j-SN-7Lt">
+                                        <rect key="frame" x="71" y="342" width="18" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Citron" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKd-O2-gn5">
+                                        <rect key="frame" x="20" y="388" width="43" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9g-TV-PbV">
+                                        <rect key="frame" x="69" y="388" width="18" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.17705620659722221" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tce-7s-5sn" firstAttribute="baseline" secondItem="9Lh-vY-dNo" secondAttribute="baseline" id="1am-gl-TG1"/>
+                                    <constraint firstItem="ptK-AC-Ucq" firstAttribute="leading" secondItem="prQ-wc-thd" secondAttribute="trailing" constant="6" id="6TE-bA-v3D"/>
+                                    <constraint firstItem="RKd-O2-gn5" firstAttribute="leading" secondItem="403-cC-Pk5" secondAttribute="leading" id="AZw-Sl-iWA"/>
+                                    <constraint firstItem="tyO-g0-fAd" firstAttribute="leading" secondItem="7YG-Xg-unz" secondAttribute="trailing" constant="6" id="CTz-kr-Qqg"/>
+                                    <constraint firstItem="MH0-K0-0N4" firstAttribute="top" secondItem="fMp-Ei-4yE" secondAttribute="top" constant="20" id="Dv5-d9-5iy"/>
+                                    <constraint firstItem="adH-Jh-UdZ" firstAttribute="top" secondItem="dBZ-8x-Fbt" secondAttribute="bottom" constant="48" id="ErA-m1-XI8"/>
+                                    <constraint firstItem="7YG-Xg-unz" firstAttribute="leading" secondItem="fMp-Ei-4yE" secondAttribute="leading" constant="20" id="FJY-EX-JdO"/>
+                                    <constraint firstItem="403-cC-Pk5" firstAttribute="top" secondItem="prQ-wc-thd" secondAttribute="bottom" constant="30" id="KJq-GL-sl1"/>
+                                    <constraint firstItem="tyO-g0-fAd" firstAttribute="top" secondItem="adH-Jh-UdZ" secondAttribute="bottom" constant="30" id="L13-BJ-7YK"/>
+                                    <constraint firstItem="prQ-wc-thd" firstAttribute="top" secondItem="tce-7s-5sn" secondAttribute="bottom" constant="30" id="Mpp-1w-coq"/>
+                                    <constraint firstItem="N3j-SN-7Lt" firstAttribute="leading" secondItem="403-cC-Pk5" secondAttribute="trailing" constant="6" id="NkF-NF-P6b"/>
+                                    <constraint firstItem="prQ-wc-thd" firstAttribute="leading" secondItem="fMp-Ei-4yE" secondAttribute="leading" constant="20" id="P9o-KV-dE4"/>
+                                    <constraint firstItem="tyO-g0-fAd" firstAttribute="leading" secondItem="7YG-Xg-unz" secondAttribute="trailing" constant="6" id="QJv-U5-upX"/>
+                                    <constraint firstItem="9Lh-vY-dNo" firstAttribute="top" secondItem="7YG-Xg-unz" secondAttribute="bottom" constant="30" id="Vze-G7-dN9"/>
+                                    <constraint firstItem="X9g-TV-PbV" firstAttribute="baseline" secondItem="RKd-O2-gn5" secondAttribute="baseline" id="Wil-bs-9AW"/>
+                                    <constraint firstItem="adH-Jh-UdZ" firstAttribute="leading" secondItem="fMp-Ei-4yE" secondAttribute="leading" constant="20" id="Z1g-Dj-z9b"/>
+                                    <constraint firstItem="ity-yv-Q4u" firstAttribute="top" secondItem="fMp-Ei-4yE" secondAttribute="top" constant="20" id="bce-h6-cre"/>
+                                    <constraint firstItem="adH-Jh-UdZ" firstAttribute="centerX" secondItem="fMp-Ei-4yE" secondAttribute="centerX" id="bqo-IL-mZR"/>
+                                    <constraint firstItem="tce-7s-5sn" firstAttribute="leading" secondItem="9Lh-vY-dNo" secondAttribute="trailing" constant="6" id="ck6-Y4-R0a"/>
+                                    <constraint firstItem="403-cC-Pk5" firstAttribute="leading" secondItem="fMp-Ei-4yE" secondAttribute="leading" constant="20" id="fcx-e6-Yef"/>
+                                    <constraint firstItem="MH0-K0-0N4" firstAttribute="leading" secondItem="fMp-Ei-4yE" secondAttribute="leading" constant="20" id="gfg-d7-aZJ"/>
+                                    <constraint firstItem="dBZ-8x-Fbt" firstAttribute="top" secondItem="ity-yv-Q4u" secondAttribute="top" id="izK-nG-eJQ"/>
+                                    <constraint firstItem="N3j-SN-7Lt" firstAttribute="baseline" secondItem="403-cC-Pk5" secondAttribute="baseline" id="jbc-RY-1qr"/>
+                                    <constraint firstAttribute="trailing" secondItem="ity-yv-Q4u" secondAttribute="trailing" constant="20" id="jkU-iW-irG"/>
+                                    <constraint firstItem="ity-yv-Q4u" firstAttribute="leading" secondItem="dBZ-8x-Fbt" secondAttribute="trailing" constant="30" id="jpT-dq-eJp"/>
+                                    <constraint firstItem="ptK-AC-Ucq" firstAttribute="baseline" secondItem="prQ-wc-thd" secondAttribute="baseline" id="kRb-yv-8FT"/>
+                                    <constraint firstAttribute="trailing" secondItem="adH-Jh-UdZ" secondAttribute="trailing" constant="20" id="mDF-k3-wuZ"/>
+                                    <constraint firstItem="9Lh-vY-dNo" firstAttribute="leading" secondItem="fMp-Ei-4yE" secondAttribute="leading" constant="20" id="oL8-uW-ecT"/>
+                                    <constraint firstItem="tyO-g0-fAd" firstAttribute="centerY" secondItem="7YG-Xg-unz" secondAttribute="centerY" id="qsx-Cb-ld3"/>
+                                    <constraint firstItem="X9g-TV-PbV" firstAttribute="leading" secondItem="RKd-O2-gn5" secondAttribute="trailing" constant="6" id="qxI-bA-wfV"/>
+                                    <constraint firstItem="RKd-O2-gn5" firstAttribute="top" secondItem="403-cC-Pk5" secondAttribute="bottom" constant="30" id="wHR-nX-T2u"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.020887586805555556" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="fMp-Ei-4yE" firstAttribute="leading" secondItem="73G-BA-cba" secondAttribute="leading" id="4az-Uj-PB6"/>
+                            <constraint firstItem="irb-0t-Rm6" firstAttribute="top" secondItem="fMp-Ei-4yE" secondAttribute="bottom" id="5Af-eP-FX7"/>
                             <constraint firstItem="y4U-ve-1jb" firstAttribute="leading" secondItem="73G-BA-cba" secondAttribute="leading" id="5At-C8-AnK"/>
                             <constraint firstItem="irb-0t-Rm6" firstAttribute="top" secondItem="y4U-ve-1jb" secondAttribute="bottom" id="CUi-jj-AU9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bEa-17-Koq" secondAttribute="trailing" constant="20" id="KuI-eD-z4U"/>
                             <constraint firstAttribute="trailing" secondItem="y4U-ve-1jb" secondAttribute="trailing" id="Oif-Pd-PjP"/>
+                            <constraint firstItem="fMp-Ei-4yE" firstAttribute="top" secondItem="bEa-17-Koq" secondAttribute="bottom" constant="20" id="PXb-lH-OxH"/>
                             <constraint firstItem="bEa-17-Koq" firstAttribute="leading" secondItem="73G-BA-cba" secondAttribute="leadingMargin" constant="20" id="i96-yt-WxP"/>
                             <constraint firstItem="bEa-17-Koq" firstAttribute="top" secondItem="73G-BA-cba" secondAttribute="topMargin" constant="74" id="odp-ho-7ht"/>
+                            <constraint firstAttribute="trailing" secondItem="fMp-Ei-4yE" secondAttribute="trailing" id="qdq-EB-rhH"/>
                             <constraint firstItem="y4U-ve-1jb" firstAttribute="top" secondItem="bEa-17-Koq" secondAttribute="bottom" constant="20" id="xS8-Aq-duJ"/>
                         </constraints>
                     </view>
@@ -938,6 +1071,7 @@
                         <outlet property="imageProfile" destination="otN-v1-7Ca" id="2B5-g4-hYA"/>
                         <outlet property="segmentBar" destination="bEa-17-Koq" id="9eh-XD-NSt"/>
                         <outlet property="view1" destination="y4U-ve-1jb" id="L1I-HU-aCe"/>
+                        <outlet property="view2" destination="fMp-Ei-4yE" id="6rp-lR-61B"/>
                         <outlet property="yoyoCollection" destination="ckp-dY-X4U" id="rXX-6l-JrW"/>
                     </connections>
                 </viewController>
@@ -1186,6 +1320,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cosmopolitan" width="120" height="120"/>
+        <image name="Mardis_gras" width="120" height="120"/>
+        <image name="Mojito" width="500" height="372"/>
         <image name="cocktail-mojito-recette" width="16" height="16"/>
         <image name="illu-beers" width="452" height="372"/>
         <image name="illu-champagne" width="350" height="436"/>

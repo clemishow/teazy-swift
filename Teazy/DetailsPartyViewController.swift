@@ -10,9 +10,10 @@ import UIKit
 
 class DetailsPartyViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    let images = ["profile", "profile", "profile", "profile", "profile", "profile"]
+    let images = ["profile", "profile-auree", "profile-antoine", "profile-noemie", "profile-justin", "profile-mathilde"]
     
     
+    @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var btnLessRow1: UIButton!
     @IBOutlet weak var btnPlusRow1: UIButton!
@@ -27,10 +28,13 @@ class DetailsPartyViewController: UIViewController, UICollectionViewDelegate, UI
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.view2.isHidden = true
 
         self.view.backgroundColor = UIColor(red: 55/255, green: 71/255, blue: 92/255, alpha: 1)
         
         self.view1.backgroundColor = .clear
+        self.view2.backgroundColor = .clear
         
         self.segmentBar.tintColor = .white
         
@@ -90,11 +94,13 @@ class DetailsPartyViewController: UIViewController, UICollectionViewDelegate, UI
 
     @IBAction func actionChange(_ sender: Any) {
         if segmentBar.selectedSegmentIndex == 0 {
-            view1.isHidden = true
+            view1.isHidden = false
+            view2.isHidden = true
         }
         
         if segmentBar.selectedSegmentIndex == 1 {
-            view1.isHidden = false
+            view1.isHidden = true
+            view2.isHidden = false
         }
     }
     
