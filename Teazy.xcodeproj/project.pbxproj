@@ -23,6 +23,7 @@
 		D768A5451EDA03A400B9C598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D768A5441EDA03A400B9C598 /* Assets.xcassets */; };
 		D768A5481EDA03A400B9C598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768A5461EDA03A400B9C598 /* LaunchScreen.storyboard */; };
 		D76E77491EE8B6840053072E /* CocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E77481EE8B6840053072E /* CocktailViewController.swift */; };
+		D76E774B1EE8C4F80053072E /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E774A1EE8C4F80053072E /* FriendsCollectionViewCell.swift */; };
 		D79B97DE1EE4418C00F8D35C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B97DD1EE4418C00F8D35C /* PageViewController.swift */; };
 		D7AA145C1EE453A10052C6D3 /* StepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AA145B1EE453A10052C6D3 /* StepOneViewController.swift */; };
 		D7AA145E1EE453FA0052C6D3 /* StepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AA145D1EE453FA0052C6D3 /* StepTwoViewController.swift */; };
@@ -50,6 +51,7 @@
 		D768A5471EDA03A400B9C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D768A5491EDA03A400B9C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76E77481EE8B6840053072E /* CocktailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailViewController.swift; sourceTree = "<group>"; };
+		D76E774A1EE8C4F80053072E /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D79B97DD1EE4418C00F8D35C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = ../PageViewController.swift; sourceTree = "<group>"; };
 		D7AA145B1EE453A10052C6D3 /* StepOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepOneViewController.swift; path = ../StepOneViewController.swift; sourceTree = "<group>"; };
 		D7AA145D1EE453FA0052C6D3 /* StepTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepTwoViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D74693B91EE8149A0068FD28 /* CocktailCollectionViewCell.swift */,
+				D76E774A1EE8C4F80053072E /* FriendsCollectionViewCell.swift */,
 				D76469881EE5BAD800E1877E /* Models */,
 				D764697D1EE59A0700E1877E /* Fonts */,
 				D7AA145A1EE453360052C6D3 /* Controllers */,
@@ -245,6 +248,7 @@
 				D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */,
 				D7C6277D1EE480DC00D967EC /* ProfileViewController.swift in Sources */,
 				D7AA145C1EE453A10052C6D3 /* StepOneViewController.swift in Sources */,
+				D76E774B1EE8C4F80053072E /* FriendsCollectionViewCell.swift in Sources */,
 				D7AA14601EE454160052C6D3 /* StepThreeViewController.swift in Sources */,
 				D76E77491EE8B6840053072E /* CocktailViewController.swift in Sources */,
 				D74907471EE46A9100B2FAE0 /* PartyViewController.swift in Sources */,

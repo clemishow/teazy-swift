@@ -279,7 +279,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRÉDIENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvN-Pl-rSL">
-                                <rect key="frame" x="137" y="294" width="102" height="16"/>
+                                <rect key="frame" x="137.5" y="294" width="101.5" height="16"/>
                                 <color key="backgroundColor" red="1" green="0.43529411764705883" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -306,7 +306,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 feuille de menthes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUp-i3-XjY">
-                                <rect key="frame" x="117" y="412" width="142" height="16"/>
+                                <rect key="frame" x="116.5" y="412" width="142" height="16"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -332,7 +332,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 cl de rhum cubain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S80-2Q-Ops">
-                                <rect key="frame" x="118" y="526" width="139" height="16"/>
+                                <rect key="frame" x="118.5" y="526" width="138.5" height="16"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -530,11 +530,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPx-aL-4Zo">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPx-aL-4Zo">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="xlV-TW-gcA">
+                                    <navigationItem title="Organiser une soirée" id="xlV-TW-gcA">
                                         <barButtonItem key="leftBarButtonItem" title="Annuler" id="yYY-OJ-Uco">
                                             <connections>
                                                 <action selector="goBack" destination="vaD-NM-wWe" id="FfW-5c-c0k"/>
@@ -544,16 +543,143 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZTE-rb-H9Z">
+                                <rect key="frame" x="26" y="182" width="323" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Adresse du lieu">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myh-Ae-9V3">
+                                <rect key="frame" x="26" y="318" width="323" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Nom de la soirée ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMU-sX-T04">
+                                <rect key="frame" x="26" y="251" width="138" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0j-vH-p2d">
+                                <rect key="frame" x="211" y="251" width="138" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="Fyq-za-9cC"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Heure">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SY7-R2-tYH">
+                                <rect key="frame" x="0.0" y="418" width="375" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="wGg-Om-fKr"/>
+                                </constraints>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ry6-Ms-KR1">
+                                    <size key="itemSize" width="60" height="60"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collection_cell" id="yaK-ve-dhY" customClass="FriendsCollectionViewCell" customModule="Teazy" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="30" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AMg-f1-fjp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="AMg-f1-fjp" firstAttribute="leading" secondItem="yaK-ve-dhY" secondAttribute="leading" id="CSP-Vh-8gL"/>
+                                            <constraint firstAttribute="trailing" secondItem="AMg-f1-fjp" secondAttribute="trailing" id="KlY-Xf-sX7"/>
+                                            <constraint firstItem="AMg-f1-fjp" firstAttribute="top" secondItem="yaK-ve-dhY" secondAttribute="top" id="PYJ-LH-H1b"/>
+                                            <constraint firstAttribute="bottom" secondItem="AMg-f1-fjp" secondAttribute="bottom" id="pqr-Es-NBi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="AMg-f1-fjp" id="Sy4-a5-Ld9"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invitez vos amis !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYX-HY-XYu">
+                                <rect key="frame" x="26" y="394" width="123.5" height="16"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.8399507705479452" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SY7-R2-tYH" firstAttribute="top" secondItem="myh-Ae-9V3" secondAttribute="bottom" constant="70" id="3KU-cr-Vak"/>
+                            <constraint firstItem="ZTE-rb-H9Z" firstAttribute="top" secondItem="UPx-aL-4Zo" secondAttribute="bottom" constant="110" id="3df-fu-PuB"/>
+                            <constraint firstItem="myh-Ae-9V3" firstAttribute="top" secondItem="E0j-vH-p2d" secondAttribute="bottom" constant="37" id="3qg-aS-YUn"/>
+                            <constraint firstItem="ZTE-rb-H9Z" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="10" id="4lv-PK-v9X"/>
+                            <constraint firstItem="UPx-aL-4Zo" firstAttribute="top" secondItem="qmb-CC-M3s" secondAttribute="bottom" constant="8" id="8PL-GA-yF2"/>
+                            <constraint firstItem="myh-Ae-9V3" firstAttribute="top" secondItem="E0j-vH-p2d" secondAttribute="bottom" constant="37" id="AbL-Gh-sgw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E0j-vH-p2d" secondAttribute="trailing" constant="10" id="But-V3-L9h"/>
+                            <constraint firstItem="SY7-R2-tYH" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leading" id="Ffn-0f-rcb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZTE-rb-H9Z" secondAttribute="trailing" constant="10" id="H3j-e1-KkA"/>
+                            <constraint firstItem="UMU-sX-T04" firstAttribute="top" secondItem="ZTE-rb-H9Z" secondAttribute="bottom" constant="39" id="KKk-uO-ens"/>
+                            <constraint firstItem="UPx-aL-4Zo" firstAttribute="centerX" secondItem="ZTE-rb-H9Z" secondAttribute="centerX" id="MnH-BM-8e1"/>
+                            <constraint firstItem="SY7-R2-tYH" firstAttribute="centerX" secondItem="esT-Dn-DGT" secondAttribute="centerX" id="QGF-vn-91L"/>
+                            <constraint firstItem="ZTE-rb-H9Z" firstAttribute="centerX" secondItem="esT-Dn-DGT" secondAttribute="centerX" id="QNp-x5-znA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="myh-Ae-9V3" secondAttribute="trailing" constant="10" id="UvU-Gs-RgM"/>
+                            <constraint firstItem="UMU-sX-T04" firstAttribute="top" secondItem="ZTE-rb-H9Z" secondAttribute="bottom" constant="39" id="VBN-2m-ZWs"/>
+                            <constraint firstItem="SY7-R2-tYH" firstAttribute="top" secondItem="gYX-HY-XYu" secondAttribute="bottom" constant="8" id="YHR-KG-TmC"/>
+                            <constraint firstItem="E0j-vH-p2d" firstAttribute="leading" secondItem="UMU-sX-T04" secondAttribute="trailing" constant="47" id="awy-te-aDh"/>
+                            <constraint firstItem="UMU-sX-T04" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="10" id="bU8-zQ-9hv"/>
+                            <constraint firstItem="gYX-HY-XYu" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="10" id="cJ4-Xt-aQ9"/>
+                            <constraint firstItem="UMU-sX-T04" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="10" id="gIQ-CR-nYj"/>
+                            <constraint firstItem="myh-Ae-9V3" firstAttribute="centerX" secondItem="esT-Dn-DGT" secondAttribute="centerX" id="ilJ-nB-hSr"/>
+                            <constraint firstItem="E0j-vH-p2d" firstAttribute="top" secondItem="ZTE-rb-H9Z" secondAttribute="bottom" constant="39" id="jUg-bk-WUu"/>
+                            <constraint firstItem="E0j-vH-p2d" firstAttribute="leading" secondItem="UMU-sX-T04" secondAttribute="trailing" constant="47" id="moN-VG-cTU"/>
+                            <constraint firstItem="UPx-aL-4Zo" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leading" id="nuS-bP-BlP"/>
+                            <constraint firstAttribute="trailing" secondItem="SY7-R2-tYH" secondAttribute="trailing" id="sK2-2A-IKa"/>
+                            <constraint firstItem="myh-Ae-9V3" firstAttribute="leading" secondItem="esT-Dn-DGT" secondAttribute="leadingMargin" constant="10" id="ugL-Oa-kuU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="UIBarButtonCancel" destination="yYY-OJ-Uco" id="F7K-m7-ir4"/>
+                        <outlet property="friendsCollection" destination="SY7-R2-tYH" id="Qv6-V8-fpu"/>
+                        <outlet property="inputAdress" destination="ZTE-rb-H9Z" id="DiL-4y-KQc"/>
+                        <outlet property="inputDate" destination="UMU-sX-T04" id="Fxu-E8-cmh"/>
+                        <outlet property="inputHour" destination="E0j-vH-p2d" id="FDT-Tc-jdI"/>
+                        <outlet property="inputName" destination="myh-Ae-9V3" id="uGy-eh-AWu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaD-NM-wWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-414" y="4006"/>
+            <point key="canvasLocation" x="-415.19999999999999" y="4005.2473763118442"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Amd-xg-0jc">
