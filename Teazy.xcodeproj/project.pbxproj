@@ -30,6 +30,7 @@
 		D7AA14601EE454160052C6D3 /* StepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AA145F1EE454160052C6D3 /* StepThreeViewController.swift */; };
 		D7C6277D1EE480DC00D967EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6277C1EE480DC00D967EC /* ProfileViewController.swift */; };
 		D7C6277F1EE48B7C00D967EC /* CocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6277E1EE48B7C00D967EC /* CocktailsViewController.swift */; };
+		D7DD35A61EE8E956009DA91E /* DetailsPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD35A51EE8E956009DA91E /* DetailsPartyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		D7AA145F1EE454160052C6D3 /* StepThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepThreeViewController.swift; sourceTree = "<group>"; };
 		D7C6277C1EE480DC00D967EC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D7C6277E1EE48B7C00D967EC /* CocktailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailsViewController.swift; sourceTree = "<group>"; };
+		D7DD35A51EE8E956009DA91E /* DetailsPartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPartyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		D7AA14621EE454360052C6D3 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D7DD35A51EE8E956009DA91E /* DetailsPartyViewController.swift */,
 				D76E77481EE8B6840053072E /* CocktailViewController.swift */,
 				D76469861EE5B8D400E1877E /* CreatePartyViewController.swift */,
 				D7C6277E1EE48B7C00D967EC /* CocktailsViewController.swift */,
@@ -245,6 +248,7 @@
 				D7C6277F1EE48B7C00D967EC /* CocktailsViewController.swift in Sources */,
 				D764698A1EE5BB5200E1877E /* PartyModel.swift in Sources */,
 				D76469871EE5B8D400E1877E /* CreatePartyViewController.swift in Sources */,
+				D7DD35A61EE8E956009DA91E /* DetailsPartyViewController.swift in Sources */,
 				D74907451EE46A7700B2FAE0 /* HomeViewController.swift in Sources */,
 				D7C6277D1EE480DC00D967EC /* ProfileViewController.swift in Sources */,
 				D7AA145C1EE453A10052C6D3 /* StepOneViewController.swift in Sources */,

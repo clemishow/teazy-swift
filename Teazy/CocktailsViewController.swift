@@ -21,6 +21,7 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
+        
 //        let url = URL(string: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
 //        URLSession.shared.dataTask(with: url!, completionHandler: {
 //            (data, response, error) in
@@ -61,11 +62,8 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("1")
         if segue.identifier == "cocktail" {
-                print("2")
             if let destination = segue.destination as? CocktailViewController {
-                print("3")
                 destination.passedData = sender as? String
             }
         }
