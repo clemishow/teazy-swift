@@ -12,7 +12,7 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var images = ["acapulco_acapulco", "banana_balu_blue_hawaii", "banana_split", "Blue_lagoon", "Bubble_gloss", "douceur_exotique", "gimlet", "Green_russian", "mardi_gras", "Mojito", "rainbow_in_paradise", "sidecar_rhum"]
+    var images = ["Acapulco", "Banana_Balu_Blue_Hawaii", "Banana_split", "Bubble_gloss", "Cosmopolitan", "Douceur_exotique", "Gimlet", "Gin_tonic", "Green_russian", "Mardis_gras", "Margarita", "Mojito", "Pina_colada", "Rainbow_in_paradise", "Raspberry_spritzer", "Sidecar_rhum"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +57,7 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("selected row is" , indexPath.row)
-        performSegue(withIdentifier: "cocktail", sender: indexPath.row)
+        performSegue(withIdentifier: "cocktail", sender: images[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -66,7 +66,7 @@ class CocktailsViewController: UIViewController, UICollectionViewDataSource, UIC
                 print("2")
             if let destination = segue.destination as? CocktailViewController {
                 print("3")
-                destination.passedData = sender as? Int
+                destination.passedData = sender as? String
             }
         }
     }
